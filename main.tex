@@ -1,0 +1,568 @@
+\documentclass[english]{sbc2025}%
+
+\usepackage[misc,geometry]{ifsym} 
+
+\usepackage{aas_macros}
+\usepackage[bottom]{footmisc}
+\usepackage{tabularray}
+\usepackage{afterpage}
+\usepackage{url}
+\usepackage{pifont}
+\usepackage{balance}
+
+\setcitestyle{square}
+
+\definecolor{engtitle}{rgb}{0.5,0.5,0.5}
+\definecolor{orcidlogo}{rgb}{0.37,0.48,0.13}
+\definecolor{unilogo}{rgb}{0.16, 0.26, 0.58}
+\definecolor{maillogo}{rgb}{0.58, 0.16, 0.26}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.0}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+%\hypersetup{colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue}
+
+%%%%%%% IMPORTANT: We disable hyperlinks by default with this line, to avoid the error "\pdfendlink ended up in different nesting level" while writing.
+%\hypersetup{draft}
+
+\jid{JIS}
+\issn{2763-7719}
+\jtitle{Journal on Interactive Systems, 2026, 17:1}
+\doi{10.5753/jis.2026.XXXX}
+\copyrightstatement{This work is licensed under a Creative Commons Attribution 4.0 International License}
+\jyear{2026}
+
+\category{Research Paper}
+
+\title[Template JIS 2026]{AVALIAÇÃO DE INTERFACES PARA APLICATIVOS DE CONTROLE DE DISPOSITIVOS IOT DE AUTOMAÇÃO}
+%
+
+\author[David et al. 2026]{
+
+%THE ORCID IS MANDATORY FOR EACH AUTHOR 
+%Institutions' names must be informed as registered in ROR (https://ror.org/), in English. 
+%Keep each author's information and institution in a single line
+
+\affil{\textbf{David Nakagawa}~\orcidlink{0000-0002-0339-6624}~\textcolor{blue}{\faEnvelopeO}~~[~{University State of Maringá}~|\href{mailto:exemplo}{~{\textit{exemplo}}}~]}
+%Search for the institution in ROR and use its English name: https://ror.org/04bqqa360
+
+\affil{\textbf{Matheus Rodrigues}~\orcidlink{0009-0007-3403-1525}~~[~{University State of Maringá}~|~\href{mailto:rodriguesmatheus309@gmail.com}{{\textit{rodriguesmatheus309@gmail.com}}}~]}
+%https://ror.org/04bqqa360
+
+\affil{\textbf{Sandro Lautenschlager}~\orcidlink{0000-0003-3219-2257}~~[~{University State of Maringá}~|~\href{mailto:srlager@uem.br}{{\textit{srlager@uem.br}}}~]}
+%https://ror.org/04bqqa360
+
+\affil{\textbf{Gislaine Camila Lapasini Leal}~\orcidlink{0000-0001-8599-0776}~~[~{University State of Maringá~}|~\href{mailto:gclleal@uem.br}{{\textit{gclleal@uem.br}}}~]}
+%https://ror.org/04bqqa360
+}
+
+
+\begin{document}
+
+\begin{frontmatter}
+
+\maketitle
+
+\begin{mail}
+	Programa de Pós Graduação em Engenharia Urbana, Universidade Estadual de Maringá, Av. Colombo, 5790 - Zona 7, Maringá - PR, 87020-900 Brazil.
+\end{mail}
+
+\begin{abstract-en}
+This text, formatted as a scientific article, aims to present the new SBC paper template, describing its main features and explaining how it should be used. The abstract must have between 400 and 750 words. \textit{Background:} JIS strongly encourages you to use the \href{https://www.nlm.nih.gov/bsd/policy/structured\_abstracts.html}{Structured Abstract template}. \textit{Purpose:} Structured abstracts have several advantages for authors and readers. \textit{Methods:} Use distinct, labeled sections  covering the main IMRAD elements (Introduction, Methods, Results, and Discussion) -- see \citep{sollaci2004introduction}. \textit{Results:} Structured abstracts guide authors in summarizing the content of their manuscripts precisely, facilitate the peer-review process, and enhance literature searching. \textit{Conclusion:} Get inspired by this structure and develop a structured abstract that adds value to your paper.
+\end{abstract-en}
+
+\begin{keywords}
+	Proceedings, Template, SBC OpenLib, Indexing %keep keywords in a single line
+\end{keywords}
+
+% \begin{dates}
+% % This information will be inserted by the editors during the production stage. Do not remove this section, and provide access to your paper latex project when sending the final version of your paper. 
+% \noindent{\sffamily\textbf{Edited by:}}
+% Full Name~\orcidlink{0000-0000-0000-0000}
+% ~~$\mid$~~ 
+% {\sffamily\textbf{Received:}} DD Month YYYY
+% ~~$\bullet$~~
+% {\sffamily\textbf{Accepted:}} DD Month YYYY
+% ~~$\bullet$~~
+% {\sffamily\textbf{Published:}} DD Month YYYY
+% \end{dates}
+
+\end{frontmatter}
+
+\section{Introduction}
+\label{sec:intro}
+O conceito de cidades inteligentes consolidou-se a partir da década de 1990 como uma resposta aos desafios urbanos contemporâneos, impulsionado por tecnologias digitais como a Internet das Coisas (IoT) e sistemas de automação. Essas tecnologias têm potencial para aprimorar a qualidade de vida, otimizar serviços urbanos e promover sustentabilidade. Entretanto, seus benefícios dependem não apenas da robustez técnica das soluções, mas também da qualidade das interfaces que conectam cidadãos, gestores e dispositivos. Interfaces mal projetadas podem comprometer a adoção, a compreensão e o uso adequado dos sistemas, reduzindo significativamente seu impacto.
+
+Nesse contexto, o design de interface (UI) e a experiência do usuário (UX) tornam-se componentes centrais em sistemas baseados em IoT. Uma interface bem projetada deve antecipar necessidades, facilitar a navegação e garantir clareza na apresentação das funcionalidades. Nielsen e Loranger (2007) destacam que simplicidade, previsibilidade e consistência são pilares fundamentais para boas interfaces, enquanto Norman (2013) aponta que produtos capazes de gerar prazer e satisfação promovem maior engajamento e aceitação tecnológica.
+
+O design de interfaces representa, portanto, a principal ponte entre usuário e sistema. É por meio dele que informações são compreendidas, comandos são acionados e dispositivos são controlados. Em soluções de iluminação inteligente, por exemplo, mesmo que sensores e atuadores funcionem corretamente, uma interface complexa pode impedir configurações adequadas, reduzindo a eficácia da tecnologia (Norman, 2013).
+
+Além disso, a crescente portabilidade dos aplicativos --- acessíveis via computadores, smartphones e tablets --- amplia o potencial da IoT na vida urbana, mas também impõe desafios adicionais ao design. A diversidade de dispositivos exige interfaces responsivas, consistentes e adaptadas ao contexto de uso.
+
+Segundo Muñoz-Arteaga et al. (2009), o design de interfaces envolve o planejamento de elementos visuais e funcionais que permitam uma interação eficiente entre usuário e sistema. Trata-se de um campo que combina aspectos estéticos, tecnológicos e comportamentais. Na área de Tecnologias da Informação, o design busca otimizar a experiência do usuário (Serrano-Tellería, 2017), considerando que impressões iniciais sobre a interface são formadas em frações de segundo. Por isso, tipografia, layout e cores devem ser cuidadosamente planejados para promover navegação intuitiva, consistência e clareza (Penichet et al., 2009; Galitz, 2007; Calonaci, 2021).
+
+A avaliação de usabilidade desempenha papel essencial nesse processo ao identificar dificuldades, validar decisões de design e orientar melhorias. Conforme Abreu, Rosa e Matos (2018), testes de usabilidade evitam desperdícios de tempo e recursos, enquanto Santos et al. (2019) destacam que permitem conhecer melhor os usuários e detectar oportunidades de aprimoramento. Importante notar que a aplicação não precisa estar totalmente funcional: análises de tarefas, protótipos de baixa fidelidade e avaliações heurísticas podem ser conduzidas conforme os objetivos da pesquisa.
+
+Nielsen (1988; 1994) propõe dez princípios heurísticos amplamente adotados para avaliar interfaces. Esses princípios incluem visibilidade do status do sistema, correspondência com o mundo real, consistência e padrões, prevenção de erros, reconhecimento em vez de memorização, eficiência, design minimalista, diagnóstico e recuperação de erros, ajuda e documentação. A técnica dispensa participação direta de usuários e baseia-se na inspeção sistemática de especialistas capazes de identificar desconformidades estruturais, funcionais e de interação (Santa Rosa, 2020).
+
+Esses princípios possibilitam ao avaliador identificar problemas que afetam a experiência do usuário, como inconsistências visuais, excesso de etapas, vocabulário inadequado ou ausência de feedback. A aplicação sistemática das heurísticas fornece um panorama confiável sobre a qualidade do design antes mesmo de testes com usuários.
+
+Diante desse cenário, esta pesquisa busca avaliar a usabilidade de três aplicativos de controle de dispositivos IoT desenvolvidos pela Smart Sensor Design. A avaliação heurística, baseada nos princípios de Nielsen (1994), teve como objetivo identificar problemas de usabilidade e propor melhorias. Essa abordagem integrada permite analisar a conformidade das interfaces, sua eficácia e a experiência de uso, além de levantar hipóteses sobre falhas de concepção que possam comprometer o desempenho das aplicações.
+
+Aplicativos de automação precisam oferecer experiências positivas, claras e intuitivas para alcançar seu propósito. Experiências negativas geram resistência, diminuem o engajamento e prejudicam a disseminação tecnológica --- um desafio crítico para a consolidação de cidades inteligentes. Avaliar interfaces em contexto real, como neste estudo de caso, permite examinar a qualidade do design, sua adequação ao público-alvo e o papel do fator humano no desenvolvimento.
+
+Em síntese, esta pesquisa demonstra que interfaces bem projetadas, intuitivas e alinhadas às necessidades dos usuários têm maior probabilidade de serem aceitas e adotadas. Ao evidenciar como o design impacta a experiência do usuário e a adoção de tecnologias IoT, este estudo contribui para o avanço de soluções urbanas mais eficientes, acessíveis e coerentes com os princípios das cidades inteligentes.
+
+\section{metodológica}
+A pesquisa foi conduzida por meio de um estudo de caso aplicado a três
+aplicativos, desenvolvidos pela Smart Sensor Design (SSD), startup
+especializada em soluções tecnológicas voltadas ao saneamento, automação e
+Internet das Coisas (IoT). O presente estudo busca compreender como usuários e
+especialistas interagem com as interfaces dos aplicativos avaliados,
+identificando dificuldades, padrões de uso e oportunidades de melhoria.
+
+Para a avaliação heurística dessa pesquisa, serão utilizados os seguintes
+aplicativos em desenvolvimento pela equipe da Smart Sensor Design:
+
+\begin{itemize}
+	\item \textbf{Smart Energy Meter:} Este aplicativo tem como objetivo criar uma interface de sensores de controle de consumo de energia de eletrodomésticos e aparelhos eletroeletrônicos. Ele pretende permitir que o usuário monitore e gerencie o consumo de energia em tempo real, ajude na tomada de decisões, perceba consumo excessivo e identifique a necessidade de ajustes para otimizar o consumo energético. Utilizando sensores indutivos de última geração conectados a um microcontrolador ESP32, os dados coletados são enviados para um servidor, permitindo monitoramento conveniente e detalhado;
+	\item \textbf{Smart Fish Finder:} Este aplicativo é voltado para a interação com sensores de pesca. O Smart Fish Finder pretende monitorar a atividade de pesca em tempo real, incluindo a localização de cardumes, profundidade da água e temperatura, proporcionando uma experiência de pesca otimizada através de uma interface de fácil uso. Ele ajuda os pescadores a tomarem decisões informadas sobre onde e quando pescar, aumentando a eficiência e o sucesso da pesca;
+	\item \textbf{Smart Flow Hall:} Este aplicativo visa controlar sensores de fluxo de água utilizando o princípio do efeito Hall. Ele tem como objetivo proporcionar precisão excepcional e longevidade no monitoramento do consumo de água, ajudando na tomada de decisões e na otimização do uso dos recursos hídricos. A tecnologia minimiza componentes mecânicos, resultando em menor necessidade de manutenção e maior confiabilidade.
+\end{itemize}
+
+Para isso, foi realizada a avaliação heurística, método amplamente utilizado na
+análise de usabilidade por meio dos dez princípios de Jakob Nielsen. A
+avaliação utilizou um checklist semiestruturado, elaborado com base nos dez
+princípios heurísticos de Nielsen (1993).
+
+A avaliação heurística foi organizada em quatro rodadas sucessivas, seguindo
+uma abordagem iterativa. As etapas foram estruturadas da seguinte forma:
+
+Primeira Rodada: Realizada pelo pesquisador utilizando protótipos das
+interfaces em dois formatos, conforme sua disponibilidade: Figma, em ambiente
+colaborativo, para protótipos preliminares; TestFlight, para versões beta em
+estágio mais avançado no ecossistema Apple. Essa fase permitiu explorar as
+interfaces desde os primeiros estágios de desenvolvimento, identificando
+problemas relacionados ao layout, navegação e usabilidade geral.
+
+Segunda Rodada: Também conduzida pelo pesquisador, utilizando versões
+experimentais dos aplicativos disponibilizadas por meio de links restritos nas
+lojas Google Play Store (Android) e Apple App Store (iOS). Em alguns casos,
+novamente foi utilizado o TestFlight, assegurando testes em condições próximas
+ao uso real.
+
+Terceira Rodada: Focada na revisão e validação dos problemas identificados nas
+rodadas anteriores. O pesquisador utilizou tanto os aplicativos instalados
+diretamente nos dispositivos quanto os ambientes compartilhados:
+Figma;TestFlight; Google Play Store e Apple App Store.
+
+Quarta Rodada: Conduzida por dois especialistas técnicos convidados, que
+utilizaram um checklist semiestruturado baseado nas heurísticas de Nielsen para
+avaliar as versões mais recentes dos aplicativos. Essa rodada acrescentou uma
+perspectiva externa, validou os achados anteriores e resultou em um parecer
+técnico geral para cada aplicativo analisado.
+
+Essa estrutura metodológica possibilitou combinar a familiaridade técnica do
+pesquisador com a visão crítica externa dos especialistas, oferecendo uma
+análise robusta sobre a usabilidade dos aplicativos desenvolvidos.
+
+Os registros foram posteriormente analisados de forma sistemática,
+possibilitando comparar apps, agrupar problemas por categorias heurísticas e
+estabelecer recomendações específicas para cada interface.
+
+Por envolver a participação de especialistas externos, esta etapa foi submetida
+à avaliação do Comitê Permanente de Ética em Pesquisa com Seres Humanos (COPEP)
+da Universidade Estadual de Maringá. O estudo foi aprovado sob o número CAAE
+73814323.6.0000.0104, Parecer 6.336.076, conforme as diretrizes da Resolução
+CNS/MS nº 466/2012.
+
+A inclusão desses três aplicativos em desenvolvimento (Smart Energy Meter,
+Smart Fish Finder e Smart Flow Hall) visa avaliar a eficiência de suas
+interfaces e sua adesão pelos usuários, contribuindo para o aprimoramento das
+soluções tecnológicas oferecidas pela Smart Sensor Design. Instrumentos
+Utilizados
+
+Cada avaliador analisou as interfaces com base nesses critérios, registrando
+problemas encontrados e atribuindo níveis de gravidade de acordo com o impacto,
+frequência e persistência das falhas.
+\begin{table*}[h!]
+    \caption{Categorias e critérios avaliados nos aplicativos analisados.}
+    \centering
+    \begin{tabular}{ll}
+    \hline
+    \textbf{Categoria} & \textbf{Critérios de verificação} \\ \hline
+
+    \textbf{1. Diálogos simples e naturais} &
+	\begin{itemize}
+		\item A interface comunica de forma clara o que o usuário deve fazer? 
+    	\item As informações estão bem agrupadas e são fáceis de localizar? 
+    	\item A sequência de passos para concluir tarefas é simples e intuitiva? 
+	\end{itemize}  
+
+    \textbf{2. Linguagem do usuário} &
+    • O vocabulário utilizado é adequado ao perfil do usuário? \\
+		 & \\
+    \textbf{3. Sobrecarga de memória} &
+    • O usuário consegue operar sem lembrar comandos específicos? \\
+    & • Há muitos comandos particulares que exigem aprendizado? \\
+    & • Existem comandos genéricos que evitam sobrecarga cognitiva? \\
+		 & \\
+    \textbf{4. Consistência} &
+    • Os elementos e operações aparecem sempre no mesmo local? \\
+    & • A consistência melhora a previsibilidade da interação? \\
+    & • A disposição uniforme aumenta confiança na exploração da interface? \\
+		 & \\
+    \textbf{5. Feedback} &
+    • A interface informa continuamente o estado da tarefa? \\
+    & • O tempo de resposta é adequado para indicar reação imediata? \\
+		 & \\
+    \textbf{6. Saídas claramente marcadas} &
+    • As saídas e cancelamentos são facilmente identificáveis? \\
+    & • O sistema fornece formas rápidas de cancelar, desfazer ou sair? \\
+		 & \\
+    \textbf{7. Atalhos} &
+    • Existem atalhos acessíveis para usuários experientes? \\
+    & • Esses atalhos são simples e fáceis de aprender? \\
+		 & \\
+    \textbf{8. Mensagens de erro} &
+    • As mensagens são claras e indicam o que ocorreu? \\
+    & • Elas ajudam o usuário a corrigir o problema? \\
+		 & \\
+    \textbf{9. Ajuda} &
+    • Existe algum mecanismo de ajuda disponível? \\
+    & • A ausência de ajuda se justifica pela simplicidade da interface? \\
+    & • Seria necessário algum recurso adicional de ajuda? \\
+		 & \\
+    \textbf{10. Documentação} &
+    • Há documentação acessível ao usuário? \\
+    & • A ausência de documentação é justificável? \\
+    & • Seria necessária documentação complementar? \\
+		 & \\
+    \hline
+    \end{tabular}
+\end{table*}
+
+
+Da avaliação heurística, foram analisados os resultados dos checklists
+preenchidos pelo próprio pesquisador. Primeiramente, o pesquisador tabulou as
+respostas dos pontos de resposta objetiva para análise quantitativa do que foi
+verificado nas respostas em 10 categorias de dados.
+
+Foi organizada uma tabela para exposição dos resultados dos três aplicativos em
+desenvolvimento pela Smart Sensor Design: Smart Energy Meter, Smart Fish Finder
+e Smart Flow Hall. No Quadro 5, estão apresentados os pontos considerados na
+organização dos resultados com base em Nielsen (1993).
+
+Essa abordagem permitiu uma compreensão detalhada das interfaces dos
+aplicativos em desenvolvimento, destacando áreas de melhoria e garantindo que
+as interfaces sejam intuitivas e eficazes para os usuários finais.
+
+\section{Resultados e Discussão}
+Os resultados apresentados nesta seção refletem o estágio atual do
+desenvolvimento, e serão complementados em análises posteriores, acompanhando a
+evolução dos aplicativos.
+
+\subsection{Resultados da Avaliação Heurística Smart Energy Meter}
+A primeira etapa da avaliação concentrou-se na análise do estado inicial do
+Smart Energy Meter, permitindo identificar as principais limitações de
+usabilidade antes da implementação de melhorias. O aplicativo apresentava um
+conjunto robusto de funcionalidades, incluindo gráficos de consumo, tabelas
+informativas, relatórios e uma seção de ajuda relativamente estruturada. No
+entanto, a forma como essas informações eram organizadas e apresentadas impunha
+uma carga cognitiva elevada, especialmente para usuários sem experiência prévia
+em monitoramento energético, um problema clássico discutido por Nielsen (1993)
+ao abordar a necessidade de simplicidade e clareza nas interfaces.
+
+A interface utilizava terminologia tecnicamente correta, mas pouco acessível ao
+público geral. Termos como “corrente máxima”, “demanda contratada” e “kWh
+acumulado” apareciam sem explicações contextuais, exigindo conhecimento
+especializado para sua interpretação. Embora os gráficos estivessem visualmente
+bem construídos, sua compreensão dependia de familiaridade prévia com conceitos
+elétricos, e não havia legendas, dicas visuais ou orientações que auxiliassem o
+usuário a interpretar os dados apresentados.
+
+O sistema de feedback inicial era funcional, mas limitado. Mensagens exibidas
+após falhas de login, erros de cadastro ou operações incorretas eram genéricas
+e pouco informativas, o que dificultava a identificação precisa do problema.
+Além disso, ações que exigiam tempo de processamento, como atualização de
+sensores ou carregamento de dados, não apresentavam indicadores de progresso. A
+ausência desse tipo de feedback visual poderia gerar a percepção de inatividade
+ou falha do sistema, contrariando recomendações fundamentais de visibilidade do
+status do sistema presentes na literatura de usabilidade.
+
+A avaliação também identificou fragilidades na prevenção de erros. O aplicativo
+permitia que o usuário removesse dispositivos ou redefinisse configurações sem
+qualquer diálogo de confirmação, o que poderia resultar em perdas
+irreversíveis. Esse aspecto demonstrou falta de mecanismos de segurança para
+ações críticas, um requisito essencial em interfaces que lidam com dados
+sensíveis e controle de dispositivos.
+
+Outro conjunto de limitações esteve relacionado à estrutura visual e à
+orientação à navegação. Apesar da interface apresentar poucos elementos
+supérfluos, característica alinhada ao design minimalista, faltavam marcadores
+visuais, ícones explicativos e distinções claras entre elementos interativos.
+Assim, embora a estrutura fosse objetivar, ela não fornecia suporte adequado
+para orientar o usuário na interação com o sistema. Problemas adicionais
+incluíam baixa saliência de botões, ausência de um fluxo inicial para orientar
+o primeiro uso e inexistência de mensagens que indicassem a necessidade de
+conectar um sensor para visualizar dados.
+
+Em síntese, a primeira etapa revelou que o Smart Energy Meter apresentava uma
+base funcional sólida, porém com limitações significativas em múltiplos
+princípios heurísticos. Conforme sintetizado na Tabela 1, os problemas
+identificados concentraram-se sobretudo na visibilidade do estado do sistema,
+severamente limitada pela ausência de indicadores de progresso, e na
+correspondência com o mundo real, devido ao uso recorrente de terminologia
+técnica sem explicações adequadas, como “kWh acumulado” e “demanda contratada”.
+Falhas no controle e liberdade do usuário também foram classificadas como
+críticas, já que ações de alto impacto, como a remoção de dispositivos, podiam
+ser executadas sem confirmações.
+
+Princípio de Nielsen Estado na Rodada 1 Gravidade Evidência Observada
+Visibilidade do Estado Severamente limitada Alta Ausência de indicadores de
+progresso Correspondência com Mundo Real Termos técnicos sem explicação Alta
+"kWh acumulado", "demanda contratada" Controle do Usuário Ações irreversíveis
+sem confirmação Crítica Remoção de dispositivos sem validação Consistência
+Parcialmente mantida Média Padrões visuais básicos presentes Prevenção de Erros
+Mecanismos insuficientes Alta Validação de formulários ausente Reconhecimento
+vs Memorização Exigia memorização excessiva Alta Funcionalidades pouco
+intuitivas Flexibilidade Navegação linear rígida Média Sequência fixa de passos
+Estética Minimalista Aplicada de forma prejudicial Média Falta de elementos
+orientadores Recuperação de Erros Mensagens genéricas Alta Feedback não
+contextualizado Documentação Técnica e complexa Média Seção de ajuda pouco
+acessível
+
+Assim, como demonstrado na Tabela 1, o diagnóstico inicial evidenciou lacunas
+estruturais que impactavam diretamente a compreensibilidade, previsibilidade e
+segurança de uso do aplicativo. Esses resultados forneceram insumos essenciais
+para orientar as intervenções nas etapas subsequentes, permitindo que os
+ajustes se concentrassem nos aspectos de maior gravidade e nos princípios
+heurísticos mais comprometidos. Frase para conectar da Primeira a Segunda e
+terceira Etapa A segunda etapa da avaliação heurística do Smart Energy Meter
+destacou avanços importantes em relação aos problemas identificados na rodada
+inicial, mas também expôs limitações que ainda comprometiam a interpretação e
+comportamento do aplicativo. Embora melhorias preliminares tenham sido
+implementadas, como tooltips, reorganização de certos elementos visuais e
+inclusão de ícones explicativos, os resultados indicaram que a interface
+permanecia distante de fornecer um suporte interpretativo adequado ao usuário.
+
+Com a mudança observou-se que o aplicativo passou a informar o andamento de
+algumas operações, mas ainda não oferecia indicadores capazes de contextualizar
+os dados. Conforme destacado por Shneiderman et al. (2017), sistemas orientados
+ao usuário devem não apenas exibir informações, mas também ajudar a
+interpretá-las. Contudo, o Smart Energy Meter ainda exibia valores absolutos de
+consumo sem indicar se representavam um padrão baixo, moderado ou elevado, o
+que mantinha alta a carga cognitiva. A inclusão inicial de cores indicativas
+(verde, amarelo e vermelho) representou um progresso, mas o aplicativo
+continuava sem estabelecer relações diretas com o cotidiano. A ausência de
+analogias práticas, como equivalentes em eletrodomésticos ou tempo de uso,
+restringia a compreensão dos usuários leigos, conforme também observado na
+literatura (Krug, 2017).
+
+A segunda etapa da avaliação heurística do Smart Energy Meter destacou avanços importantes em relação aos problemas identificados na rodada inicial, mas também expôs limitações que ainda comprometiam a interpretação e comportamento do aplicativo. Embora melhorias preliminares tenham sido implementadas, como tooltips, reorganização de certos elementos visuais e inclusão de ícones explicativos, os resultados indicaram que a interface permanecia distante de fornecer um suporte interpretativo adequado ao usuário.
+
+Com a mudança observou-se que o aplicativo passou a informar o andamento de algumas operações, mas ainda não oferecia indicadores capazes de contextualizar os dados. Conforme destacado por Shneiderman et al. (2017), sistemas orientados ao usuário devem não apenas exibir informações, mas também ajudar a interpretá-las. Contudo, o Smart Energy Meter ainda exibia valores absolutos de consumo sem indicar se representavam um padrão baixo, moderado ou elevado, o que mantinha alta a carga cognitiva.
+
+A inclusão inicial de cores indicativas (verde, amarelo e vermelho) representou um progresso, mas o aplicativo continuava sem estabelecer relações diretas com o cotidiano. A ausência de analogias práticas, como equivalentes em eletrodomésticos ou tempo de uso, restringia a compreensão dos usuários leigos, conforme também observado na literatura (Krug, 2017).
+
+A etapa 2 também destacou fragilidade, uma vez que operações de remoção de dispositivos e exclusão de históricos continuavam sem mensagens de confirmação robustas. Embora alguns alertas tenham sido parcialmente introduzidos, eles eram ainda sucintos e pouco informativos quanto às consequências da ação.
+
+Verificou-se a evolução moderada. A estrutura dos gráficos e principais indicadores começou a ser reorganizada, dando maior destaque ao consumo mensal e às variações percentuais. No entanto, persistiam inconsistências no uso da paleta de cores e na diferenciação entre botões primários e secundários, algo também destacado por avaliações anteriores.
+
+A etapa também mostrou avanços relativos à prevenção de erros, sobretudo com melhorias nas validações básicas de formulários. Entretanto, a ausência de mensagens preventivas em ações críticas continuava evidente, o que limitava a segurança da navegação.
+Quanto a redução parcial da carga cognitiva: tooltips e ícones auxiliaram na compreensão de termos complexos, porém não eliminaram a necessidade de interpretação mental dos dados técnicos.
+
+Em termos de eficiência e flexibilidade de uso, pequenas melhorias foram registradas, como a reorganização de menus e a priorização de indicadores essenciais. Ainda assim, a navegação continuava predominantemente linear, com poucos atalhos ou alternativas para realizar tarefas de forma mais rápida.
+
+Finalmente, verificou-se que a documentação e o suporte passaram por revisão textual, reduzindo erros e melhorando a clareza. Contudo, ainda permaneciam inacessíveis para muitos usuários por não estarem integrados à interação e por não oferecerem exemplos práticos.
+
+
+Assim, conforme sintetizado na Tabela X (Etapa 2), a segunda rodada apresentou um avanço estrutural em relação ao diagnóstico inicial, mas manteve limitações importantes na interpretação dos dados, no controle das ações críticas e na contextualização das informações. Esses achados orientaram as melhorias que seriam exploradas de forma mais profunda na terceira etapa.
+
+A terceira etapa da avaliação heurística evidenciou uma evolução substancial no Smart Energy Meter, marcada por intervenções diretamente orientadas pelos achados das duas primeiras rodadas. Diferentemente da etapa anterior, cujas melhorias foram principalmente incrementais, a terceira rodada resultou em transformações estruturais perceptíveis na apresentação das informações, no feedback do sistema e na orientação ao usuário.
+
+Como ilustrado na Fig. \ref{Fig1}, a implementação de barras de progresso, indicadores de atualização em tempo real e mensagens explicativas representou um avanço significativo em termos de visibilidade do estado do sistema. Esses elementos reduziram a sensação de inércia relatada nas etapas anteriores e se alinham com as recomendações de Norman (2013) sobre previsibilidade e transparência. Além disso, o uso de classificações interpretativas de consumo (baixo, moderado, elevado) contribuiu para diminuir a carga cognitiva e tornar a leitura mais acessível a usuários iniciantes.
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/resultado/Imagem1.png}
+\caption{Evolução da visibilidade do sistema – Smart Energy Meter}
+\label{Fig1}
+\end{center}
+\end{figure}
+
+A terceira rodada também consolidou melhorias na tradução de métricas técnicas para referências cotidianas. Embora analogias completas ainda não tivessem sido implementadas, as interfaces passaram a recorrer a cores, descrições simplificadas e elementos visuais mais intuitivos — mudanças visíveis na Fig. \ref{Fig2}. A sugestão de comparações práticas, como equivalências baseadas no uso de eletrodomésticos, emergiu como recomendação importante, reforçando a necessidade de aproximar o modelo conceitual do sistema ao modelo mental do usuário (Krug, 2017; Nielsen, 1993).
+
+No âmbito do controle do usuário, a inclusão de mensagens de confirmação antes de ações críticas mitigou parte dos riscos associados à irreversibilidade das interações. Apesar disso, a ausência de uma função de desfazer permaneceu como limitação relevante, indicando que melhorias adicionais ainda são necessárias nesse aspecto.
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/resultado/Imagem2.png}
+\caption{Evolução da Consistência e Padrões – Smart Energy Meter}
+\label{Fig2}
+\end{center}
+\end{figure}
+
+Também se observou um amadurecimento visual e funcional quanto à consistência e aos padrões da interface. As cores passaram a seguir uma lógica uniforme, os ícones foram parcialmente padronizados e a organização dos menus tornou-se mais intuitiva. Embora ainda houvesse inconsistências — como a diferenciação entre botões primários e secundários — a evolução em relação às rodadas anteriores foi expressiva.
+
+No que se refere à prevenção e recuperação de erros, a terceira rodada trouxe avanços significativos com a introdução de validação em tempo real, mensagens de erro mais específicas e orientações contextualizadas para correções, conforme pode ser observado na Fig. \ref{Fig2}. Essas melhorias evidenciam maior alinhamento com as recomendações de Dix et al. (2003), especialmente no fornecimento de pistas adequadas durante o preenchimento de formulários.
+
+A criação de atalhos rápidos entre gráficos, botões de navegação ("voltar" e "próximo") e a reorganização dos menus — mudanças ilustradas na Fig. \ref{Fig3} — contribuíram para reduzir a rigidez da navegação linear observada previamente, aproximando o sistema de um fluxo mais eficiente e flexível.
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/resultado/Imagem3.png}
+\caption{Evolução da Ajuda e Documentação – Smart Energy Meter}
+\label{Fig3}
+\end{center}
+\end{figure}
+
+Por fim, mesmo sem um tutorial completo ou um processo de onboarding estruturado, a adição de pequenas mensagens de orientação contextual representou um avanço relevante, reduzindo a dependência de documentação externa e facilitando o aprendizado progressivo do usuário.
+
+De modo geral, conforme sintetizado na Tabela Y (Etapa 3), a terceira rodada representou um ponto de inflexão no desenvolvimento do Smart Energy Meter, com melhorias significativas em praticamente todos os princípios heurísticos, embora algumas lacunas estruturais — como ausência de comparação contextual e inexistência de mecanismos de desfazer — ainda persistissem e fossem posteriormente retomadas pelos especialistas na etapa final.
+
+A quarta e última etapa da avaliação heurística, conduzida por especialistas externos, teve como objetivo validar as melhorias implementadas ao longo das rodadas anteriores e identificar lacunas remanescentes na interface do Smart Energy Meter. Os resultados indicaram que o aplicativo apresentou avanços substanciais em termos de clareza informacional, previsibilidade e consistência visual. Entretanto, a etapa final também evidenciou pontos críticos que ainda exigem ajustes para consolidar a experiência do usuário.
+
+No que diz respeito à visibilidade do estado do sistema, os especialistas reconheceram que a reestruturação da hierarquia da informação, incluindo a introdução de legendas explicativas, aprimoramento das animações de carregamento e refinamento dos indicadores visuais, tornou a navegação mais fluida e compreensível. As melhorias implementadas proporcionaram ao usuário maior percepção sobre o andamento das ações e sobre a origem dos dados apresentados. Ainda assim, os avaliadores destacaram a persistência de um problema crítico: a ausência de mensagens orientativas quando não havia dispositivos cadastrados ou sensores conectados. A tela vazia, sem explicações, comprometia a previsibilidade do sistema e poderia induzir o usuário a acreditar que o aplicativo estava inoperante. Em resposta a esse achado, foi inserida a mensagem “Nenhum dispositivo cadastrado. Adicione um dispositivo para visualizar os dados”, alinhando-se ao princípio de Nielsen (1993) sobre feedback contínuo e informativo.
+
+A avaliação final também revelou questões importantes relativas à consistência e padrões. Embora grande parte da interface já apresentasse padronização visual melhorada, os especialistas observaram que alguns elementos ainda careciam de maior uniformidade, como ícones, espaçamentos e contrastes, particularmente na tela de login e nas áreas de cadastro de dispositivos. Essas inconsistências foram associadas à ausência de um sistema de design unificado, cuja implementação foi sugerida para garantir robustez visual e previsibilidade funcional. A tela de QR Code foi identificada como o ponto mais crítico nesse aspecto: em alguns dispositivos, apresentou travamentos durante o carregamento, interrompendo o fluxo de cadastro e comprometendo a confiança do usuário na aplicação. O problema se tornou ainda mais evidente pela ausência de mensagens informativas que explicassem o motivo do erro ou orientassem sobre como prosseguir.
+
+Quanto à recuperação e prevenção de erros, os especialistas elogiaram a evolução das mensagens de erro, agora mais descritivas e direcionadas, atendendo parcialmente às recomendações de Norman (2013). No entanto, ressaltaram que o aplicativo ainda não comunicava adequadamente cenários de falha relacionados à ausência de sensores conectados, tampouco aos erros de leitura do QR Code. A falta de mensagens claras nesses contextos poderia resultar em interpretações equivocadas por usuários iniciantes, aumentando a probabilidade de abandono da tarefa.
+
+No âmbito da navegação, controle e liberdade do usuário, a etapa final apontou melhorias significativas, como a inclusão de botões de retorno e a reorganização de menus. Contudo, avaliadores relataram dificuldade no acesso ao menu lateral, cujo ícone de perfil no canto superior esquerdo era pequeno e pouco responsivo, configurando uma barreira à descoberta de funcionalidades. A ausência de atalhos diretos para configurações também foi citada como uma limitação, sugerindo que futuras versões incorporem pontos de acesso rápido às ações mais frequentes.
+
+A análise referente à estética e design minimalista indicou que, embora o aplicativo apresentasse uma interface limpa e consistente com o conceito de simplicidade, ainda carecia de reforços na hierarquia visual. Em especial, faltavam diferenciações claras entre ações primárias e secundárias e maior ênfase em elementos essenciais para orientar o usuário. Os especialistas consideraram que o minimalismo aplicado era funcional, mas que poderia beneficiar-se de refinamentos visuais que tornassem a navegação mais acessível e intuitiva, sobretudo para usuários sem familiaridade com monitoramento energético.
+
+Por fim, no que se refere à documentação e suporte, os especialistas confirmaram que a seção de ajuda estava mais acessível do que nas etapas anteriores, mas ainda apresentava desafios de organização e profundidade. A ausência de conteúdo multimídia (como vídeos explicativos, diagramas interativos e exemplos práticos) foi apontada como uma limitação. Além disso, avaliadores relataram dificuldade em encontrar opções claras de suporte técnico ou contato direto, o que é especialmente sensível em aplicativos que envolvem dispositivos IoT. A literatura (Dix et al., 2003) reforça que suporte acessível e contextual é indispensável para reduzir a frustração do usuário, aspecto que permanece como recomendação para versões posteriores.
+
+Em síntese, conforme sistematizado na Tabela Z (Etapa 4), a última rodada de avaliação validou avanços importantes, especialmente em clareza informacional, feedback e previsibilidade, mas evidenciou problemas críticos relacionados à ausência de mensagens em cenários de não conexão, inconsistências visuais pontuais e falhas no fluxo de QR Code. Os especialistas concluíram que, embora o Smart Energy Meter tenha alcançado um nível elevado de maturidade funcional, ainda há oportunidades de refinamento que podem consolidar a interface como uma solução mais robusta, intuitiva e alinhada às diretrizes heurísticas de Nielsen.
+
+\begin{table*}[ht]
+\centering
+\footnotesize
+\begin{tabular}{cp{3.8cm} p{3.8cm} p{3.8cm} p{4.2cm}}
+\hline
+\textbf{Nº} &
+\textbf{Rodada 1} &
+\textbf{Rodada 2} &
+\textbf{Rodada 3} &
+\textbf{Principais Evoluções} \\
+\hline
+ & & & & \\
+
+1 &
+Estado pouco visível; ausência de indicadores. &
+Status básico informado, mas sem contexto. &
+Sistema interpretativo completo; indicadores claros. &
+Progressiva contextualização e clareza dos dados apresentados. \\
+ & & & & \\
+
+2 &
+Termos técnicos sem explicação. &
+Tooltips, cores semafóricas e ícones adicionados. &
+Comparações práticas e metáforas visuais reforçadas. &
+Aumento contínuo de compreensão e aproximação ao mundo real. \\
+ & & & & \\
+
+3 &
+Ações irreversíveis sem confirmação. &
+Confirmações básicas; ausência de desfazer. &
+Confirmações ampliadas e alternativas sugeridas. &
+Ações tornam-se mais seguras e guiadas. \\
+ & & & & \\
+
+4 &
+Padrões visuais básicos presentes. &
+Padronização parcial de cores e ícones. &
+Design system totalmente unificado. &
+Identidade visual progressivamente unificada. \\
+ & & & & \\
+
+5 &
+Validação insuficiente. &
+Alertas e validações básicas. &
+Validação em tempo real e feedback dinâmico. &
+Evolução para um sistema robusto de prevenção de erros. \\
+ & & & & \\
+
+6 &
+Alta carga de memorização. &
+Hierarquia visual melhorada. &
+Navegação intuitiva e atalhos úteis. &
+Redução significativa da carga cognitiva. \\
+ & & & & \\
+
+7 &
+Navegação linear rígida. &
+Redução de etapas em alguns fluxos. &
+Fluxos otimizados e menus reorganizados. &
+Aumento contínuo de eficiência e flexibilidade. \\
+ & & & & \\
+
+8 &
+Minimalismo excessivo e desorientador. &
+Design mais equilibrado. &
+Hierarquia visual clara e responsividade. &
+Melhor equilíbrio entre simplicidade e orientação. \\
+ & & & & \\
+
+9 &
+Mensagens genéricas. &
+Mensagens mais específicas, porém limitadas. &
+Classificação por tipo e instruções corretivas. &
+Feedback evolui para contextual e orientador. \\
+ & & & & \\
+
+10 &
+Ajuda técnica e pouco acessível. &
+Textos revisados e linguagem simplificada. &
+Ajuda contextual e links relevantes. &
+Melhoria contínua na acessibilidade e suporte ao usuário. \\
+\hline
+\end{tabular}
+\caption{Evolução dos problemas de usabilidade ao longo das três rodadas segundo os Princípios de Nielsen (numerados de 1 a 10).}
+\end{table*}
+
+% \begin{declarations}
+
+% \begin{acknowledgements}
+% THIS DECLARATION IS OPTIONAL. This is a multiline text of acknowledgments. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+% \end{acknowledgements}
+
+% \begin{funding}
+% THIS DECLARATION IS OPTIONAL. This research was funded by lorem ipsum dolor sit amet, consectetur adipiscing elit.
+% \end{funding}
+
+% \begin{contributions}
+% THIS DECLARATION IS MANDATORY. We suggest authors to describe their contribution using the CRediT Taxonomy (\href{https://credit.niso.org/}{https://credit.niso.org/}) as in this example: JV contributed to the conception of this study. CB, RP, and CM performed the experiments. JV is the main contributor and writer of this manuscript. RP has added further information to the template. All authors read and approved the final manuscript. 
+% \end{contributions}
+
+% \begin{interests}
+% THIS DECLARATION IS MANDATORY. If there are no competing interests, the authors should declare: ``The authors declare that they have no competing interests''. Otherwise, the declaration should be: ``The authors declare that they have the following competing interests, lorem ipsum dolor sit amet, consectetur adipiscing elit.''
+% \end{interests}
+
+% \begin{materials}
+% THIS DECLARATION IS MANDATORY. JIS strongly requires authors to make their datasets, methods, software, transcripts, and other additional materials available for the readers in public repositories (e.g., Zenodo, GitHub, OSF). Furthermore, supplementary material the authors provided will appear on the paper's publication page. The declaration should be: ``The datasets (and/or softwares) generated and/or analysed during the current study are available in lorem ipsum dolor sit amet''. 
+% \end{materials}
+
+% \begin{furtherinformation}
+% THIS DECLARATION IS DESIRABLE. Additional relevant information, such as the Citation Diversity Statement, approval by an ethics committee or the use of generative AI tools in the development of the article. 
+
+% \textbf{Citation Diversity Statement}: According to \cite{cdstate}, a ``\textit{Citation Diversity Statement is a short paragraph, included before the References section, in which the authors consider their own bias and quantify the equitability of their reference lists.}" The authors explain that Citation Diversity Statement is a simple and effective way to increase awareness about citation bias and help mitigate it.
+
+%     If you never read about gender bias in science, take a look at this article: Yan, V. X., Arndt, A. N., Muenks, K., and Henderson, M. D. (2025). \textbf{I forgot that you existed: Role of memory accessibility in the gender citation gap}. American Psychologist, 80(1), 91–105. https://doi.org/10.1037/amp0001299
+
+% \end{furtherinformation}
+
+% \end{declarations}
+
+%Pay attention to the examples in the refs.bib file
+%Full DOI address is mandatory whenever available
+%Updated last access date (i.e., later than the paper acceptance notification) is required for urls in footnotes and references (except DOI)
+
+\bibliographystyle{apalike-sol}
+\balance
+\bibliography{refs}
+
+\end{document}
+
