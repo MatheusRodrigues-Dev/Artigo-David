@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1764967686.79031 "main.aux" "main.bbl" "main" 1764967702.48675 0
+["bibtex main"] 1765227683.22937 "main.aux" "main.bbl" "main" 1765227685.04932 0
   "./apalike-sol.bst" 1764958108.05851 24928 269dedab788b7f84af88c155ecb45872 ""
   "./refs.bib" 1764958690.2313 2339 deba2025ee0fc8e8dd18ec9d5676639c ""
-  "main.aux" 1764967702.18205 2320 cb7da53c1f18eee652eff2846d21f2ef "pdflatex"
+  "main.aux" 1765227684.73245 2623 58e37d5f3715cc8f0c5357925a60a7a1 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1764967701.16805 "/home/ssdnotedev/Artigo-David/main.tex" "main.pdf" "main" 1764967702.48695 0
+["pdflatex"] 1765227683.61527 "/home/ssdnotedev/Artigo-David/main.tex" "main.pdf" "main" 1765227685.04949 0
   "/etc/texmf/web2c/texmf.cnf" 1757903047.78521 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/ssdnotedev/Artigo-David/main.tex" 1764967700.96605 44635 22ccd94bf11c120b4ed385eea950a409 ""
+  "/home/ssdnotedev/Artigo-David/main.tex" 1765227680.38845 44796 5684fcca68a3e3504585b6d53c0e09eb ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fira/fir_2mfh3o.enc" 1570828436 3443 c184b8b1bd90c3ec5d4289b992e64d96 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fira/fir_iln36p.enc" 1570828436 3071 cfa92ee28d698dd9275559d9d1c3a233 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
@@ -231,7 +231,6 @@
   "/usr/share/texmf/fonts/tfm/public/tex-gyre/ec-qtmb.tfm" 1480098718 11484 431d8013ae6931f9326b9a0f492d2a5e ""
   "/usr/share/texmf/fonts/tfm/public/tex-gyre/ec-qtmr.tfm" 1480098718 11504 0b76b46eb90907e684139293e03c466a ""
   "/usr/share/texmf/fonts/tfm/public/tex-gyre/ec-qtmri.tfm" 1480098718 11356 da1519f442d8a49b81c86cbaf25ef79f ""
-  "/usr/share/texmf/fonts/tfm/public/tex-gyre/ts1-qtmb.tfm" 1480098718 1608 bde4475c6eb5aa292519d95aa26b6413 ""
   "/usr/share/texmf/fonts/tfm/public/tex-gyre/ts1-qtmr.tfm" 1480098718 1600 20cdf11dab97d5d39e847571f9314407 ""
   "/usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb" 1480098745 131776 4be3e220f990dc716f91bb7965c09237 ""
   "/usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb" 1480098745 133302 8dca243a80ecf4cfe00077d4bd995bd7 ""
@@ -243,13 +242,14 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1757903113 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757903195 3348813 0d5a809f044fc0c7eb76b87e7985fe12 ""
   "aas_macros.sty" 1764958108.0558 4967 cf45ff75f433e372cec5993ac08f4363 ""
+  "figures/metodologia/etapas.png" 1765226697.70589 58395 148dcfe0e896f0ce7c1ba1856b2767f3 ""
   "figures/resultado/Imagem1.png" 1764965303.47202 66504 cf642ec4b99c511825391766981e505e ""
   "figures/resultado/Imagem2.png" 1764965318.02395 76508 0ab2b9d7c5a9b97c9433a9dc539ce217 ""
   "figures/resultado/Imagem3.png" 1764965346.86903 101717 08e1cb88ea7dfe539ab752c2b4953f6d ""
-  "main.aux" 1764967702.18205 2320 cb7da53c1f18eee652eff2846d21f2ef "pdflatex"
-  "main.bbl" 1764967686.88606 374 b81ce52fb1f64992ad5f7bc998ca29b5 "bibtex main"
-  "main.out" 1764967702.18605 720 a615879ca323c0264ebbd926399d1a8c "pdflatex"
-  "main.tex" 1764967700.96605 44635 22ccd94bf11c120b4ed385eea950a409 ""
+  "main.aux" 1765227684.73245 2623 58e37d5f3715cc8f0c5357925a60a7a1 "pdflatex"
+  "main.bbl" 1765227683.60045 374 b81ce52fb1f64992ad5f7bc998ca29b5 "bibtex main"
+  "main.out" 1765227684.73245 895 b4d3175f8be78d38cca14bb02de59044 "pdflatex"
+  "main.tex" 1765227680.38845 44796 5684fcca68a3e3504585b6d53c0e09eb ""
   "sbc2025.cls" 1764958108.06898 14768 bc0838d6832a9adab29f3989767c532d ""
   (generated)
   "main.aux"

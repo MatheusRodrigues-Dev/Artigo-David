@@ -114,15 +114,9 @@ Aplicativos de automação precisam oferecer experiências positivas, claras e i
 Em síntese, esta pesquisa demonstra que interfaces bem projetadas, intuitivas e alinhadas às necessidades dos usuários têm maior probabilidade de serem aceitas e adotadas. Ao evidenciar como o design impacta a experiência do usuário e a adoção de tecnologias IoT, este estudo contribui para o avanço de soluções urbanas mais eficientes, acessíveis e coerentes com os princípios das cidades inteligentes.
 
 \section{metodológica}
-A pesquisa foi conduzida por meio de um estudo de caso aplicado a três
-aplicativos, desenvolvidos pela Smart Sensor Design (SSD), startup
-especializada em soluções tecnológicas voltadas ao saneamento, automação e
-Internet das Coisas (IoT). O presente estudo busca compreender como usuários e
-especialistas interagem com as interfaces dos aplicativos avaliados,
-identificando dificuldades, padrões de uso e oportunidades de melhoria.
+A pesquisa foi conduzida por meio de um estudo de caso aplicado a três aplicativos, desenvolvidos pela Smart Sensor Design (SSD), startup especializada em soluções tecnológicas voltadas ao saneamento, automação e Internet das Coisas (IoT). O presente estudo busca compreender como usuários e especialistas interagem com as interfaces dos aplicativos avaliados, identificando dificuldades, padrões de uso e oportunidades de melhoria.
 
-Para a avaliação heurística dessa pesquisa, serão utilizados os seguintes
-aplicativos em desenvolvimento pela equipe da Smart Sensor Design:
+Para a avaliação heurística dessa pesquisa, serão utilizados os seguintes aplicativos em desenvolvimento pela equipe da Smart Sensor Design:
 
 \begin{itemize}
 	\item \textbf{Smart Energy Meter:} Este aplicativo tem como objetivo criar uma interface de sensores de controle de consumo de energia de eletrodomésticos e aparelhos eletroeletrônicos. Ele pretende permitir que o usuário monitore e gerencie o consumo de energia em tempo real, ajude na tomada de decisões, perceba consumo excessivo e identifique a necessidade de ajustes para otimizar o consumo energético. Utilizando sensores indutivos de última geração conectados a um microcontrolador ESP32, os dados coletados são enviados para um servidor, permitindo monitoramento conveniente e detalhado;
@@ -130,234 +124,116 @@ aplicativos em desenvolvimento pela equipe da Smart Sensor Design:
 	\item \textbf{Smart Flow Hall:} Este aplicativo visa controlar sensores de fluxo de água utilizando o princípio do efeito Hall. Ele tem como objetivo proporcionar precisão excepcional e longevidade no monitoramento do consumo de água, ajudando na tomada de decisões e na otimização do uso dos recursos hídricos. A tecnologia minimiza componentes mecânicos, resultando em menor necessidade de manutenção e maior confiabilidade.
 \end{itemize}
 
-Para isso, foi realizada a avaliação heurística, método amplamente utilizado na
-análise de usabilidade por meio dos dez princípios de Jakob Nielsen. A
-avaliação utilizou um checklist semiestruturado, elaborado com base nos dez
-princípios heurísticos de Nielsen (1993).
+Para isso, foi realizada a avaliação heurística, método amplamente utilizado na análise de usabilidade por meio dos dez princípios de Jakob Nielsen. A avaliação utilizou um checklist semiestruturado, elaborado com base nos dez princípios heurísticos de Nielsen (1993).
 
-A avaliação heurística foi organizada em quatro rodadas sucessivas, seguindo
-uma abordagem iterativa. As etapas foram estruturadas da seguinte forma:
+O processo de avaliação foi conduzido em quatro rodadas complementares, cada uma com objetivos e níveis de maturidade distintos, conforme ilustrado na Figura \ref{MetodoloEtapas}. 
 
-Primeira Rodada: Realizada pelo pesquisador utilizando protótipos das
-interfaces em dois formatos, conforme sua disponibilidade: Figma, em ambiente
-colaborativo, para protótipos preliminares; TestFlight, para versões beta em
-estágio mais avançado no ecossistema Apple. Essa fase permitiu explorar as
-interfaces desde os primeiros estágios de desenvolvimento, identificando
-problemas relacionados ao layout, navegação e usabilidade geral.
+\begin{figure}[!ht]
+    \begin{center}
+        \includegraphics[width=\columnwidth]{figures/metodologia/etapas.png}
+        \caption{Evolução da visibilidade do sistema – Smart Energy Meter}
+        \label{MetodoloEtapas}
+    \end{center}
+\end{figure}
 
-Segunda Rodada: Também conduzida pelo pesquisador, utilizando versões
-experimentais dos aplicativos disponibilizadas por meio de links restritos nas
-lojas Google Play Store (Android) e Apple App Store (iOS). Em alguns casos,
-novamente foi utilizado o TestFlight, assegurando testes em condições próximas
-ao uso real.
+A primeira rodada, realizada pelo pesquisador, envolveu a análise inicial de protótipos desenvolvidos em Figma e versões beta distribuídas via TestFlight, permitindo identificar problemas estruturais de navegação, layout e organização das informações. Na segunda rodada, o pesquisador avaliou versões experimentais disponibilizadas por links restritos nas lojas Google Play Store e Apple App Store, o que possibilitou testar os aplicativos em condições mais próximas do uso real e observar questões funcionais emergentes. A terceira rodada consistiu em uma revisão sistemática das melhorias implementadas, utilizando novamente os protótipos e as versões instaladas nos dispositivos, com o objetivo de verificar a correção dos problemas previamente identificados. Por fim, a quarta rodada foi conduzida por dois especialistas externos, que aplicaram um checklist semiestruturado baseado nas heurísticas de Nielsen, validando os achados das fases anteriores e oferecendo uma análise técnica independente das versões mais recentes dos aplicativos.
 
-Terceira Rodada: Focada na revisão e validação dos problemas identificados nas
-rodadas anteriores. O pesquisador utilizou tanto os aplicativos instalados
-diretamente nos dispositivos quanto os ambientes compartilhados:
-Figma;TestFlight; Google Play Store e Apple App Store.
+Essa estrutura metodológica possibilitou combinar a familiaridade técnica do pesquisador com a visão crítica externa dos especialistas, oferecendo uma análise robusta sobre a usabilidade dos aplicativos desenvolvidos.
 
-Quarta Rodada: Conduzida por dois especialistas técnicos convidados, que
-utilizaram um checklist semiestruturado baseado nas heurísticas de Nielsen para
-avaliar as versões mais recentes dos aplicativos. Essa rodada acrescentou uma
-perspectiva externa, validou os achados anteriores e resultou em um parecer
-técnico geral para cada aplicativo analisado.
+Os registros foram posteriormente analisados de forma sistemática, possibilitando comparar apps, agrupar problemas por categorias heurísticas e estabelecer recomendações específicas para cada interface.
 
-Essa estrutura metodológica possibilitou combinar a familiaridade técnica do
-pesquisador com a visão crítica externa dos especialistas, oferecendo uma
-análise robusta sobre a usabilidade dos aplicativos desenvolvidos.
+Por envolver a participação de especialistas externos, esta etapa foi submetida à avaliação do Comitê Permanente de Ética em Pesquisa com Seres Humanos (COPEP) da Universidade Estadual de Maringá. O estudo foi aprovado sob o número CAAE 73814323.6.0000.0104, Parecer 6.336.076, conforme as diretrizes da Resolução CNS/MS nº 466/2012.
 
-Os registros foram posteriormente analisados de forma sistemática,
-possibilitando comparar apps, agrupar problemas por categorias heurísticas e
-estabelecer recomendações específicas para cada interface.
+A inclusão desses três aplicativos em desenvolvimento (Smart Energy Meter, Smart Fish Finder e Smart Flow Hall) visa avaliar a eficiência de suas interfaces e sua adesão pelos usuários, contribuindo para o aprimoramento das soluções tecnológicas oferecidas pela Smart Sensor Design. 
 
-Por envolver a participação de especialistas externos, esta etapa foi submetida
-à avaliação do Comitê Permanente de Ética em Pesquisa com Seres Humanos (COPEP)
-da Universidade Estadual de Maringá. O estudo foi aprovado sob o número CAAE
-73814323.6.0000.0104, Parecer 6.336.076, conforme as diretrizes da Resolução
-CNS/MS nº 466/2012.
+\subsection{Instrumentos Utilizados}
 
-A inclusão desses três aplicativos em desenvolvimento (Smart Energy Meter,
-Smart Fish Finder e Smart Flow Hall) visa avaliar a eficiência de suas
-interfaces e sua adesão pelos usuários, contribuindo para o aprimoramento das
-soluções tecnológicas oferecidas pela Smart Sensor Design. Instrumentos
-Utilizados
+Cada avaliador analisou as interfaces com base nesses critérios, registrando problemas encontrados e atribuindo níveis de gravidade de acordo com o impacto, frequência e persistência das falhas.
 
-Cada avaliador analisou as interfaces com base nesses critérios, registrando
-problemas encontrados e atribuindo níveis de gravidade de acordo com o impacto,
-frequência e persistência das falhas.
-\begin{table*}[h!]
+Da avaliação heurística, foram analisados os resultados dos checklists preenchidos pelo próprio pesquisador. Primeiramente, o pesquisador tabulou as respostas dos pontos de resposta objetiva para análise quantitativa do que foi verificado nas respostas em 10 categorias de dados.
+
+Foi organizada uma tabela para exposição dos resultados dos três aplicativos em desenvolvimento pela Smart Sensor Design: Smart Energy Meter, Smart Fish Finder e Smart Flow Hall. Na tabela \ref{tabela-comparacao}, estão apresentados os pontos considerados na organização dos resultados com base em Nielsen (1993).
+
+
+\begin{table*}[!ht]
     \caption{Categorias e critérios avaliados nos aplicativos analisados.}
+    \label{tabela-comparacao}
     \centering
     \begin{tabular}{ll}
     \hline
     \textbf{Categoria} & \textbf{Critérios de verificação} \\ \hline
 
-    \textbf{1. Diálogos simples e naturais} &
-	\begin{itemize}
-		\item A interface comunica de forma clara o que o usuário deve fazer? 
-    	\item As informações estão bem agrupadas e são fáceis de localizar? 
-    	\item A sequência de passos para concluir tarefas é simples e intuitiva? 
-	\end{itemize}  
-
+	 & \\
+    \textbf{1. Diálogos simples e naturais} & A interface comunica de forma clara o que o usuário deve fazer? \\
+                                            & As informações estão bem agrupadas e são fáceis de localizar? \\
+    	                                    & A sequência de passos para concluir tarefas é simples e intuitiva? \\
+        	 & \\
     \textbf{2. Linguagem do usuário} &
-    • O vocabulário utilizado é adequado ao perfil do usuário? \\
+    O vocabulário utilizado é adequado ao perfil do usuário? \\
 		 & \\
     \textbf{3. Sobrecarga de memória} &
-    • O usuário consegue operar sem lembrar comandos específicos? \\
-    & • Há muitos comandos particulares que exigem aprendizado? \\
-    & • Existem comandos genéricos que evitam sobrecarga cognitiva? \\
+    O usuário consegue operar sem lembrar comandos específicos? \\
+    & Há muitos comandos particulares que exigem aprendizado? \\
+    & Existem comandos genéricos que evitam sobrecarga cognitiva? \\
 		 & \\
     \textbf{4. Consistência} &
-    • Os elementos e operações aparecem sempre no mesmo local? \\
-    & • A consistência melhora a previsibilidade da interação? \\
-    & • A disposição uniforme aumenta confiança na exploração da interface? \\
+    Os elementos e operações aparecem sempre no mesmo local? \\
+    & A consistência melhora a previsibilidade da interação? \\
+    & A disposição uniforme aumenta confiança na exploração da interface? \\
 		 & \\
     \textbf{5. Feedback} &
-    • A interface informa continuamente o estado da tarefa? \\
-    & • O tempo de resposta é adequado para indicar reação imediata? \\
+    A interface informa continuamente o estado da tarefa? \\
+    & O tempo de resposta é adequado para indicar reação imediata? \\
 		 & \\
     \textbf{6. Saídas claramente marcadas} &
-    • As saídas e cancelamentos são facilmente identificáveis? \\
-    & • O sistema fornece formas rápidas de cancelar, desfazer ou sair? \\
+    As saídas e cancelamentos são facilmente identificáveis? \\
+    & O sistema fornece formas rápidas de cancelar, desfazer ou sair? \\
 		 & \\
     \textbf{7. Atalhos} &
-    • Existem atalhos acessíveis para usuários experientes? \\
-    & • Esses atalhos são simples e fáceis de aprender? \\
+    Existem atalhos acessíveis para usuários experientes? \\
+    & Esses atalhos são simples e fáceis de aprender? \\
 		 & \\
     \textbf{8. Mensagens de erro} &
-    • As mensagens são claras e indicam o que ocorreu? \\
-    & • Elas ajudam o usuário a corrigir o problema? \\
+    As mensagens são claras e indicam o que ocorreu? \\
+    & Elas ajudam o usuário a corrigir o problema? \\
 		 & \\
     \textbf{9. Ajuda} &
-    • Existe algum mecanismo de ajuda disponível? \\
-    & • A ausência de ajuda se justifica pela simplicidade da interface? \\
-    & • Seria necessário algum recurso adicional de ajuda? \\
+    Existe algum mecanismo de ajuda disponível? \\
+    & A ausência de ajuda se justifica pela simplicidade da interface? \\
+    & Seria necessário algum recurso adicional de ajuda? \\
 		 & \\
     \textbf{10. Documentação} &
-    • Há documentação acessível ao usuário? \\
-    & • A ausência de documentação é justificável? \\
-    & • Seria necessária documentação complementar? \\
+    Há documentação acessível ao usuário? \\
+    & A ausência de documentação é justificável? \\
+    & Seria necessária documentação complementar? \\
 		 & \\
     \hline
     \end{tabular}
 \end{table*}
 
-
-Da avaliação heurística, foram analisados os resultados dos checklists
-preenchidos pelo próprio pesquisador. Primeiramente, o pesquisador tabulou as
-respostas dos pontos de resposta objetiva para análise quantitativa do que foi
-verificado nas respostas em 10 categorias de dados.
-
-Foi organizada uma tabela para exposição dos resultados dos três aplicativos em
-desenvolvimento pela Smart Sensor Design: Smart Energy Meter, Smart Fish Finder
-e Smart Flow Hall. No Quadro 5, estão apresentados os pontos considerados na
-organização dos resultados com base em Nielsen (1993).
-
-Essa abordagem permitiu uma compreensão detalhada das interfaces dos
-aplicativos em desenvolvimento, destacando áreas de melhoria e garantindo que
-as interfaces sejam intuitivas e eficazes para os usuários finais.
+Essa abordagem permitiu uma compreensão detalhada das interfaces dos aplicativos em desenvolvimento, destacando áreas de melhoria e garantindo que as interfaces sejam intuitivas e eficazes para os usuários finais.
 
 \section{Resultados e Discussão}
-Os resultados apresentados nesta seção refletem o estágio atual do
-desenvolvimento, e serão complementados em análises posteriores, acompanhando a
-evolução dos aplicativos.
+Os resultados apresentados nesta seção refletem o estágio atual do desenvolvimento, e serão complementados em análises posteriores, acompanhando a evolução dos aplicativos.
 
 \subsection{Resultados da Avaliação Heurística Smart Energy Meter}
-A primeira etapa da avaliação concentrou-se na análise do estado inicial do
-Smart Energy Meter, permitindo identificar as principais limitações de
-usabilidade antes da implementação de melhorias. O aplicativo apresentava um
-conjunto robusto de funcionalidades, incluindo gráficos de consumo, tabelas
-informativas, relatórios e uma seção de ajuda relativamente estruturada. No
-entanto, a forma como essas informações eram organizadas e apresentadas impunha
-uma carga cognitiva elevada, especialmente para usuários sem experiência prévia
-em monitoramento energético, um problema clássico discutido por Nielsen (1993)
-ao abordar a necessidade de simplicidade e clareza nas interfaces.
+A primeira etapa da avaliação concentrou-se na análise do estado inicial do Smart Energy Meter, permitindo identificar as principais limitações de usabilidade antes da implementação de melhorias. O aplicativo apresentava um conjunto robusto de funcionalidades, incluindo gráficos de consumo, tabelas informativas, relatórios e uma seção de ajuda relativamente estruturada. No entanto, a forma como essas informações eram organizadas e apresentadas impunha uma carga cognitiva elevada, especialmente para usuários sem experiência prévia em monitoramento energético, um problema clássico discutido por Nielsen (1993) ao abordar a necessidade de simplicidade e clareza nas interfaces.
 
-A interface utilizava terminologia tecnicamente correta, mas pouco acessível ao
-público geral. Termos como “corrente máxima”, “demanda contratada” e “kWh
-acumulado” apareciam sem explicações contextuais, exigindo conhecimento
-especializado para sua interpretação. Embora os gráficos estivessem visualmente
-bem construídos, sua compreensão dependia de familiaridade prévia com conceitos
-elétricos, e não havia legendas, dicas visuais ou orientações que auxiliassem o
-usuário a interpretar os dados apresentados.
+A interface utilizava terminologia tecnicamente correta, mas pouco acessível ao público geral. Termos como “corrente máxima”, “demanda contratada” e “kWh acumulado” apareciam sem explicações contextuais, exigindo conhecimento especializado para sua interpretação. Embora os gráficos estivessem visualmente bem construídos, sua compreensão dependia de familiaridade prévia com conceitos elétricos, e não havia legendas, dicas visuais ou orientações que auxiliassem o usuário a interpretar os dados apresentados.
 
-O sistema de feedback inicial era funcional, mas limitado. Mensagens exibidas
-após falhas de login, erros de cadastro ou operações incorretas eram genéricas
-e pouco informativas, o que dificultava a identificação precisa do problema.
-Além disso, ações que exigiam tempo de processamento, como atualização de
-sensores ou carregamento de dados, não apresentavam indicadores de progresso. A
-ausência desse tipo de feedback visual poderia gerar a percepção de inatividade
-ou falha do sistema, contrariando recomendações fundamentais de visibilidade do
-status do sistema presentes na literatura de usabilidade.
+O sistema de feedback inicial era funcional, mas limitado. Mensagens exibidas após falhas de login, erros de cadastro ou operações incorretas eram genéricas e pouco informativas, o que dificultava a identificação precisa do problema. Além disso, ações que exigiam tempo de processamento, como atualização de sensores ou carregamento de dados, não apresentavam indicadores de progresso. A ausência desse tipo de feedback visual poderia gerar a percepção de inatividade ou falha do sistema, contrariando recomendações fundamentais de visibilidade do status do sistema presentes na literatura de usabilidade.
 
-A avaliação também identificou fragilidades na prevenção de erros. O aplicativo
-permitia que o usuário removesse dispositivos ou redefinisse configurações sem
-qualquer diálogo de confirmação, o que poderia resultar em perdas
-irreversíveis. Esse aspecto demonstrou falta de mecanismos de segurança para
-ações críticas, um requisito essencial em interfaces que lidam com dados
-sensíveis e controle de dispositivos.
+A avaliação também identificou fragilidades na prevenção de erros. O aplicativo permitia que o usuário removesse dispositivos ou redefinisse configurações sem qualquer diálogo de confirmação, o que poderia resultar em perdas irreversíveis. Esse aspecto demonstrou falta de mecanismos de segurança para ações críticas, um requisito essencial em interfaces que lidam com dados sensíveis e controle de dispositivos.
 
-Outro conjunto de limitações esteve relacionado à estrutura visual e à
-orientação à navegação. Apesar da interface apresentar poucos elementos
-supérfluos, característica alinhada ao design minimalista, faltavam marcadores
-visuais, ícones explicativos e distinções claras entre elementos interativos.
-Assim, embora a estrutura fosse objetivar, ela não fornecia suporte adequado
-para orientar o usuário na interação com o sistema. Problemas adicionais
-incluíam baixa saliência de botões, ausência de um fluxo inicial para orientar
-o primeiro uso e inexistência de mensagens que indicassem a necessidade de
-conectar um sensor para visualizar dados.
+Outro conjunto de limitações esteve relacionado à estrutura visual e à orientação à navegação. Apesar da interface apresentar poucos elementos supérfluos, característica alinhada ao design minimalista, faltavam marcadores visuais, ícones explicativos e distinções claras entre elementos interativos. Assim, embora a estrutura fosse objetivar, ela não fornecia suporte adequado para orientar o usuário na interação com o sistema. Problemas adicionais incluíam baixa saliência de botões, ausência de um fluxo inicial para orientar o primeiro uso e inexistência de mensagens que indicassem a necessidade de conectar um sensor para visualizar dados.
 
-Em síntese, a primeira etapa revelou que o Smart Energy Meter apresentava uma
-base funcional sólida, porém com limitações significativas em múltiplos
-princípios heurísticos. Conforme sintetizado na Tabela 1, os problemas
-identificados concentraram-se sobretudo na visibilidade do estado do sistema,
-severamente limitada pela ausência de indicadores de progresso, e na
-correspondência com o mundo real, devido ao uso recorrente de terminologia
-técnica sem explicações adequadas, como “kWh acumulado” e “demanda contratada”.
-Falhas no controle e liberdade do usuário também foram classificadas como
-críticas, já que ações de alto impacto, como a remoção de dispositivos, podiam
-ser executadas sem confirmações.
+Em síntese, a primeira etapa revelou que o Smart Energy Meter apresentava uma base funcional sólida, porém com limitações significativas em múltiplos princípios heurísticos. Conforme sintetizado na Tabela 1, os problemas identificados concentraram-se sobretudo na visibilidade do estado do sistema, severamente limitada pela ausência de indicadores de progresso, e na correspondência com o mundo real, devido ao uso recorrente de terminologia técnica sem explicações adequadas, como “kWh acumulado” e “demanda contratada”. Falhas no controle e liberdade do usuário também foram classificadas como críticas, já que ações de alto impacto, como a remoção de dispositivos, podiam ser executadas sem confirmações.
 
-Princípio de Nielsen Estado na Rodada 1 Gravidade Evidência Observada
-Visibilidade do Estado Severamente limitada Alta Ausência de indicadores de
-progresso Correspondência com Mundo Real Termos técnicos sem explicação Alta
-"kWh acumulado", "demanda contratada" Controle do Usuário Ações irreversíveis
-sem confirmação Crítica Remoção de dispositivos sem validação Consistência
-Parcialmente mantida Média Padrões visuais básicos presentes Prevenção de Erros
-Mecanismos insuficientes Alta Validação de formulários ausente Reconhecimento
-vs Memorização Exigia memorização excessiva Alta Funcionalidades pouco
-intuitivas Flexibilidade Navegação linear rígida Média Sequência fixa de passos
-Estética Minimalista Aplicada de forma prejudicial Média Falta de elementos
-orientadores Recuperação de Erros Mensagens genéricas Alta Feedback não
-contextualizado Documentação Técnica e complexa Média Seção de ajuda pouco
-acessível
+Princípio de Nielsen Estado na Rodada 1 Gravidade Evidência Observada Visibilidade do Estado Severamente limitada Alta Ausência de indicadores de progresso Correspondência com Mundo Real Termos técnicos sem explicação Alta "kWh acumulado", "demanda contratada" Controle do Usuário Ações irreversíveis sem confirmação Crítica Remoção de dispositivos sem validação Consistência Parcialmente mantida Média Padrões visuais básicos presentes Prevenção de Erros Mecanismos insuficientes Alta Validação de formulários ausente Reconhecimento vs Memorização Exigia memorização excessiva Alta Funcionalidades pouco intuitivas Flexibilidade Navegação linear rígida Média Sequência fixa de passos Estética Minimalista Aplicada de forma prejudicial Média Falta de elementos orientadores Recuperação de Erros Mensagens genéricas Alta Feedback não contextualizado Documentação Técnica e complexa Média Seção de ajuda pouco acessível
 
-Assim, como demonstrado na Tabela 1, o diagnóstico inicial evidenciou lacunas
-estruturais que impactavam diretamente a compreensibilidade, previsibilidade e
-segurança de uso do aplicativo. Esses resultados forneceram insumos essenciais
-para orientar as intervenções nas etapas subsequentes, permitindo que os
-ajustes se concentrassem nos aspectos de maior gravidade e nos princípios
-heurísticos mais comprometidos. Frase para conectar da Primeira a Segunda e
-terceira Etapa A segunda etapa da avaliação heurística do Smart Energy Meter
-destacou avanços importantes em relação aos problemas identificados na rodada
-inicial, mas também expôs limitações que ainda comprometiam a interpretação e
-comportamento do aplicativo. Embora melhorias preliminares tenham sido
-implementadas, como tooltips, reorganização de certos elementos visuais e
-inclusão de ícones explicativos, os resultados indicaram que a interface
-permanecia distante de fornecer um suporte interpretativo adequado ao usuário.
+Assim, como demonstrado na Tabela 1, o diagnóstico inicial evidenciou lacunas estruturais que impactavam diretamente a compreensibilidade, previsibilidade e segurança de uso do aplicativo. Esses resultados forneceram insumos essenciais para orientar as intervenções nas etapas subsequentes, permitindo que os ajustes se concentrassem nos aspectos de maior gravidade e nos princípios heurísticos mais comprometidos. Frase para conectar da Primeira a Segunda e terceira Etapa A segunda etapa da avaliação heurística do Smart Energy Meter destacou avanços importantes em relação aos problemas identificados na rodada inicial, mas também expôs limitações que ainda comprometiam a interpretação e comportamento do aplicativo. Embora melhorias preliminares tenham sido implementadas, como tooltips, reorganização de certos elementos visuais e inclusão de ícones explicativos, os resultados indicaram que a interface permanecia distante de fornecer um suporte interpretativo adequado ao usuário.
 
-Com a mudança observou-se que o aplicativo passou a informar o andamento de
-algumas operações, mas ainda não oferecia indicadores capazes de contextualizar
-os dados. Conforme destacado por Shneiderman et al. (2017), sistemas orientados
-ao usuário devem não apenas exibir informações, mas também ajudar a
-interpretá-las. Contudo, o Smart Energy Meter ainda exibia valores absolutos de
-consumo sem indicar se representavam um padrão baixo, moderado ou elevado, o
-que mantinha alta a carga cognitiva. A inclusão inicial de cores indicativas
-(verde, amarelo e vermelho) representou um progresso, mas o aplicativo
-continuava sem estabelecer relações diretas com o cotidiano. A ausência de
-analogias práticas, como equivalentes em eletrodomésticos ou tempo de uso,
-restringia a compreensão dos usuários leigos, conforme também observado na
-literatura (Krug, 2017).
+Com a mudança observou-se que o aplicativo passou a informar o andamento de algumas operações, mas ainda não oferecia indicadores capazes de contextualizar os dados. Conforme destacado por Shneiderman et al. (2017), sistemas orientados ao usuário devem não apenas exibir informações, mas também ajudar a interpretá-las. Contudo, o Smart Energy Meter ainda exibia valores absolutos de consumo sem indicar se representavam um padrão baixo, moderado ou elevado, o que mantinha alta a carga cognitiva. A inclusão inicial de cores indicativas (verde, amarelo e vermelho) representou um progresso, mas o aplicativo continuava sem estabelecer relações diretas com o cotidiano. A ausência de analogias práticas, como equivalentes em eletrodomésticos ou tempo de uso, restringia a compreensão dos usuários leigos, conforme também observado na literatura (Krug, 2017).
 
 A segunda etapa da avaliação heurística do Smart Energy Meter destacou avanços importantes em relação aos problemas identificados na rodada inicial, mas também expôs limitações que ainda comprometiam a interpretação e comportamento do aplicativo. Embora melhorias preliminares tenham sido implementadas, como tooltips, reorganização de certos elementos visuais e inclusão de ícones explicativos, os resultados indicaram que a interface permanecia distante de fornecer um suporte interpretativo adequado ao usuário.
 
@@ -383,7 +259,7 @@ A terceira etapa da avaliação heurística evidenciou uma evolução substancia
 
 Como ilustrado na Fig. \ref{Fig1}, a implementação de barras de progresso, indicadores de atualização em tempo real e mensagens explicativas representou um avanço significativo em termos de visibilidade do estado do sistema. Esses elementos reduziram a sensação de inércia relatada nas etapas anteriores e se alinham com as recomendações de Norman (2013) sobre previsibilidade e transparência. Além disso, o uso de classificações interpretativas de consumo (baixo, moderado, elevado) contribuiu para diminuir a carga cognitiva e tornar a leitura mais acessível a usuários iniciantes.
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \begin{center}
 \includegraphics[width=\columnwidth]{figures/resultado/Imagem1.png}
 \caption{Evolução da visibilidade do sistema – Smart Energy Meter}
@@ -395,7 +271,7 @@ A terceira rodada também consolidou melhorias na tradução de métricas técni
 
 No âmbito do controle do usuário, a inclusão de mensagens de confirmação antes de ações críticas mitigou parte dos riscos associados à irreversibilidade das interações. Apesar disso, a ausência de uma função de desfazer permaneceu como limitação relevante, indicando que melhorias adicionais ainda são necessárias nesse aspecto.
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \begin{center}
 \includegraphics[width=\columnwidth]{figures/resultado/Imagem2.png}
 \caption{Evolução da Consistência e Padrões – Smart Energy Meter}
@@ -409,7 +285,7 @@ No que se refere à prevenção e recuperação de erros, a terceira rodada trou
 
 A criação de atalhos rápidos entre gráficos, botões de navegação ("voltar" e "próximo") e a reorganização dos menus — mudanças ilustradas na Fig. \ref{Fig3} — contribuíram para reduzir a rigidez da navegação linear observada previamente, aproximando o sistema de um fluxo mais eficiente e flexível.
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \begin{center}
 \includegraphics[width=\columnwidth]{figures/resultado/Imagem3.png}
 \caption{Evolução da Ajuda e Documentação – Smart Energy Meter}
@@ -437,91 +313,91 @@ Por fim, no que se refere à documentação e suporte, os especialistas confirma
 
 Em síntese, conforme sistematizado na Tabela Z (Etapa 4), a última rodada de avaliação validou avanços importantes, especialmente em clareza informacional, feedback e previsibilidade, mas evidenciou problemas críticos relacionados à ausência de mensagens em cenários de não conexão, inconsistências visuais pontuais e falhas no fluxo de QR Code. Os especialistas concluíram que, embora o Smart Energy Meter tenha alcançado um nível elevado de maturidade funcional, ainda há oportunidades de refinamento que podem consolidar a interface como uma solução mais robusta, intuitiva e alinhada às diretrizes heurísticas de Nielsen.
 
-\begin{table*}[ht]
-\centering
-\footnotesize
-\begin{tabular}{cp{3.8cm} p{3.8cm} p{3.8cm} p{4.2cm}}
-\hline
-\textbf{Nº} &
-\textbf{Rodada 1} &
-\textbf{Rodada 2} &
-\textbf{Rodada 3} &
-\textbf{Principais Evoluções} \\
-\hline
- & & & & \\
+% \begin{table*}[!ht]
+% \centering
+% \footnotesize
+% \begin{tabular}{cp{3.8cm} p{3.8cm} p{3.8cm} p{4.2cm}}
+% \hline
+% \textbf{Nº} &
+% \textbf{Rodada 1} &
+% \textbf{Rodada 2} &
+% \textbf{Rodada 3} &
+% \textbf{Principais Evoluções} \\
+% \hline
+%  & & & & \\
 
-1 &
-Estado pouco visível; ausência de indicadores. &
-Status básico informado, mas sem contexto. &
-Sistema interpretativo completo; indicadores claros. &
-Progressiva contextualização e clareza dos dados apresentados. \\
- & & & & \\
+% 1 &
+% Estado pouco visível; ausência de indicadores. &
+% Status básico informado, mas sem contexto. &
+% Sistema interpretativo completo; indicadores claros. &
+% Progressiva contextualização e clareza dos dados apresentados. \\
+%  & & & & \\
 
-2 &
-Termos técnicos sem explicação. &
-Tooltips, cores semafóricas e ícones adicionados. &
-Comparações práticas e metáforas visuais reforçadas. &
-Aumento contínuo de compreensão e aproximação ao mundo real. \\
- & & & & \\
+% 2 &
+% Termos técnicos sem explicação. &
+% Tooltips, cores semafóricas e ícones adicionados. &
+% Comparações práticas e metáforas visuais reforçadas. &
+% Aumento contínuo de compreensão e aproximação ao mundo real. \\
+%  & & & & \\
 
-3 &
-Ações irreversíveis sem confirmação. &
-Confirmações básicas; ausência de desfazer. &
-Confirmações ampliadas e alternativas sugeridas. &
-Ações tornam-se mais seguras e guiadas. \\
- & & & & \\
+% 3 &
+% Ações irreversíveis sem confirmação. &
+% Confirmações básicas; ausência de desfazer. &
+% Confirmações ampliadas e alternativas sugeridas. &
+% Ações tornam-se mais seguras e guiadas. \\
+%  & & & & \\
 
-4 &
-Padrões visuais básicos presentes. &
-Padronização parcial de cores e ícones. &
-Design system totalmente unificado. &
-Identidade visual progressivamente unificada. \\
- & & & & \\
+% 4 &
+% Padrões visuais básicos presentes. &
+% Padronização parcial de cores e ícones. &
+% Design system totalmente unificado. &
+% Identidade visual progressivamente unificada. \\
+%  & & & & \\
 
-5 &
-Validação insuficiente. &
-Alertas e validações básicas. &
-Validação em tempo real e feedback dinâmico. &
-Evolução para um sistema robusto de prevenção de erros. \\
- & & & & \\
+% 5 &
+% Validação insuficiente. &
+% Alertas e validações básicas. &
+% Validação em tempo real e feedback dinâmico. &
+% Evolução para um sistema robusto de prevenção de erros. \\
+%  & & & & \\
 
-6 &
-Alta carga de memorização. &
-Hierarquia visual melhorada. &
-Navegação intuitiva e atalhos úteis. &
-Redução significativa da carga cognitiva. \\
- & & & & \\
+% 6 &
+% Alta carga de memorização. &
+% Hierarquia visual melhorada. &
+% Navegação intuitiva e atalhos úteis. &
+% Redução significativa da carga cognitiva. \\
+%  & & & & \\
 
-7 &
-Navegação linear rígida. &
-Redução de etapas em alguns fluxos. &
-Fluxos otimizados e menus reorganizados. &
-Aumento contínuo de eficiência e flexibilidade. \\
- & & & & \\
+% 7 &
+% Navegação linear rígida. &
+% Redução de etapas em alguns fluxos. &
+% Fluxos otimizados e menus reorganizados. &
+% Aumento contínuo de eficiência e flexibilidade. \\
+%  & & & & \\
 
-8 &
-Minimalismo excessivo e desorientador. &
-Design mais equilibrado. &
-Hierarquia visual clara e responsividade. &
-Melhor equilíbrio entre simplicidade e orientação. \\
- & & & & \\
+% 8 &
+% Minimalismo excessivo e desorientador. &
+% Design mais equilibrado. &
+% Hierarquia visual clara e responsividade. &
+% Melhor equilíbrio entre simplicidade e orientação. \\
+%  & & & & \\
 
-9 &
-Mensagens genéricas. &
-Mensagens mais específicas, porém limitadas. &
-Classificação por tipo e instruções corretivas. &
-Feedback evolui para contextual e orientador. \\
- & & & & \\
+% 9 &
+% Mensagens genéricas. &
+% Mensagens mais específicas, porém limitadas. &
+% Classificação por tipo e instruções corretivas. &
+% Feedback evolui para contextual e orientador. \\
+%  & & & & \\
 
-10 &
-Ajuda técnica e pouco acessível. &
-Textos revisados e linguagem simplificada. &
-Ajuda contextual e links relevantes. &
-Melhoria contínua na acessibilidade e suporte ao usuário. \\
-\hline
-\end{tabular}
-\caption{Evolução dos problemas de usabilidade ao longo das três rodadas segundo os Princípios de Nielsen (numerados de 1 a 10).}
-\end{table*}
+% 10 &
+% Ajuda técnica e pouco acessível. &
+% Textos revisados e linguagem simplificada. &
+% Ajuda contextual e links relevantes. &
+% Melhoria contínua na acessibilidade e suporte ao usuário. \\
+% \hline
+% \end{tabular}
+% \caption{Evolução dos problemas de usabilidade ao longo das três rodadas segundo os Princípios de Nielsen (numerados de 1 a 10).}
+% \end{table*}
 
 % \begin{declarations}
 
