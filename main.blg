@@ -6,45 +6,45 @@ Database file #1: refs.bib
 Warning--empty chapter and pages in Dix2004
 Warning--empty publisher in Dix2004
 Warning--empty doi in Dix2004
-You've used 12 entries,
+You've used 11 entries,
             1961 wiz_defined-function locations,
-            569 strings with 6374 characters,
-and the built_in function-call counts, 4583 in all, are:
-= -- 428
-> -- 187
-< -- 7
-+ -- 68
-- -- 62
-* -- 379
-:= -- 802
-add.period$ -- 35
-call.type$ -- 12
-change.case$ -- 87
-chr.to.int$ -- 12
-cite$ -- 15
-duplicate$ -- 187
-empty$ -- 327
-format.name$ -- 78
-if$ -- 900
+            561 strings with 6104 characters,
+and the built_in function-call counts, 4219 in all, are:
+= -- 394
+> -- 174
+< -- 6
++ -- 62
+- -- 58
+* -- 346
+:= -- 738
+add.period$ -- 32
+call.type$ -- 11
+change.case$ -- 80
+chr.to.int$ -- 11
+cite$ -- 14
+duplicate$ -- 173
+empty$ -- 300
+format.name$ -- 71
+if$ -- 830
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 16
-newline$ -- 61
-num.names$ -- 36
-pop$ -- 92
+missing$ -- 15
+newline$ -- 56
+num.names$ -- 33
+pop$ -- 88
 preamble$ -- 1
-purify$ -- 91
+purify$ -- 84
 quote$ -- 0
-skip$ -- 145
+skip$ -- 134
 stack$ -- 0
-substring$ -- 270
-swap$ -- 30
+substring$ -- 247
+swap$ -- 29
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 62
+type$ -- 56
 warning$ -- 3
-while$ -- 29
+while$ -- 26
 width$ -- 0
-write$ -- 159
+write$ -- 145
 (There were 3 warnings)
