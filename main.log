@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.9.14)  9 DEC 2025 10:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.9.14)  9 DEC 2025 15:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -758,7 +758,11 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 22.
 LaTeX Font Info:    Trying to load font information for T1+qtm on input line 60.
  (/usr/share/texmf/tex/latex/tex-gyre/t1qtm.fd
 File: t1qtm.fd 2009/09/25 v1.2 font definition file for T1/qtm
-) (./main.aux)
+) (./main.aux
+
+LaTeX Warning: Label `Fig5' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
@@ -974,26 +978,26 @@ LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 12
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 )
 
-<figures/metodologia/etapas.png, id=56, 830.35219pt x 600.74437pt>
+<figures/metodologia/etapas.png, id=111, 830.35219pt x 600.74437pt>
 File: figures/metodologia/etapas.png Graphic file (type png)
 <use figures/metodologia/etapas.png>
 Package pdftex.def Info: figures/metodologia/etapas.png  used on input line 131.
 (pdftex.def)             Requested size: 240.0pt x 173.63391pt.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/sl/n' in size <12> not available
-(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 147.
+(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 149.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/book/n' will be
-(Font)              scaled to size 12.0pt on input line 147.
+(Font)              scaled to size 12.0pt on input line 149.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <12> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 147.
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 149.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 147.
+(Font)              scaled to size 12.0pt on input line 149.
 
-Underfull \hbox (badness 1242) in paragraph at lines 149--150
+Underfull \hbox (badness 1242) in paragraph at lines 151--152
 \T1/qtm/m/n/10 (+20) Cada avali-ador anal-isou as in-ter-faces com base nesses
  []
 
 
-Underfull \vbox (badness 2326) has occurred while \output is active []
+Underfull \vbox (badness 1635) has occurred while \output is active []
 
 
 
@@ -1002,42 +1006,85 @@ Underfull \vbox (badness 2326) has occurred while \output is active []
 
 
 [3]
-Underfull \vbox (badness 5475) has occurred while \output is active []
-
-
 
 
 
 [4]
-<figures/resultado/Imagem1.png, id=75, 342.27875pt x 246.9225pt>
+<figures/resultado/Imagem1.png, id=146, 342.27875pt x 246.9225pt>
 File: figures/resultado/Imagem1.png Graphic file (type png)
 <use figures/resultado/Imagem1.png>
-Package pdftex.def Info: figures/resultado/Imagem1.png  used on input line 262.
+Package pdftex.def Info: figures/resultado/Imagem1.png  used on input line 261.
 (pdftex.def)             Requested size: 240.0pt x 173.1422pt.
 
 
-<figures/resultado/Imagem2.png, id=78, 415.5525pt x 299.1175pt>
+<figures/resultado/Imagem2.png, id=153, 415.5525pt x 299.1175pt>
 File: figures/resultado/Imagem2.png Graphic file (type png)
 <use figures/resultado/Imagem2.png>
-Package pdftex.def Info: figures/resultado/Imagem2.png  used on input line 274.
+Package pdftex.def Info: figures/resultado/Imagem2.png  used on input line 273.
 (pdftex.def)             Requested size: 240.0pt x 172.75343pt.
 
 
 [5 <./figures/resultado/Imagem1.png> <./figures/resultado/Imagem2.png>]
-<figures/resultado/Imagem3.png, id=89, 415.5525pt x 312.16624pt>
+<figures/resultado/Imagem3.png, id=168, 415.5525pt x 312.16624pt>
 File: figures/resultado/Imagem3.png Graphic file (type png)
 <use figures/resultado/Imagem3.png>
-Package pdftex.def Info: figures/resultado/Imagem3.png  used on input line 288.
+Package pdftex.def Info: figures/resultado/Imagem3.png  used on input line 287.
 (pdftex.def)             Requested size: 240.0pt x 180.28966pt.
 
 
 
 
-[6 <./figures/resultado/Imagem3.png>] (./main.bbl)
+[6 <./figures/resultado/Imagem3.png>]
+
+<figures/resultado/Imagem4.png, id=185, 415.5525pt x 312.16624pt>
+File: figures/resultado/Imagem4.png Graphic file (type png)
+<use figures/resultado/Imagem4.png>
+Package pdftex.def Info: figures/resultado/Imagem4.png  used on input line 333.
+(pdftex.def)             Requested size: 240.0pt x 180.28966pt.
+
+
+[7]
+
+<figures/resultado/Imagem5.png, id=196, 415.5525pt x 312.16624pt>
+File: figures/resultado/Imagem5.png Graphic file (type png)
+<use figures/resultado/Imagem5.png>
+Package pdftex.def Info: figures/resultado/Imagem5.png  used on input line 361.
+(pdftex.def)             Requested size: 240.0pt x 180.28966pt.
+
+
+[8 <./figures/resultado/Imagem4.png>]
 
 
 
-[7] (./main.aux)
+[9 <./figures/resultado/Imagem5.png>]
+<figures/resultado/Imagem6.png, id=211, 415.5525pt x 312.16624pt>
+File: figures/resultado/Imagem6.png Graphic file (type png)
+<use figures/resultado/Imagem6.png>
+Package pdftex.def Info: figures/resultado/Imagem6.png  used on input line 401.
+(pdftex.def)             Requested size: 240.0pt x 180.28966pt.
+
+
+
+
+[10 <./figures/resultado/Imagem6.png>]
+
+
+
+[11] (./main.bbl
+Underfull \hbox (badness 2961) in paragraph at lines 4--7
+[]\T1/qtm/m/n/10 (+20) Almeida Abreu, C., Cle-mis-son San-tos Rosa, J., and
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 47--50
+[]\T1/qtm/m/n/10 (+20) Shneiderman, B., Plaisant, C., Co-hen, M., Ja-cobs, S.,
+ []
+
+
+
+)
+
+[12] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1046,22 +1093,25 @@ L3 programming layer <2025-01-18>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B4D3175F8BE78D38CCA14BB02DE59044;895.
+(rerunfilecheck)             Checksum: 06DEE79B61EA2FF9CF0749EE47680254;1710.
  ) 
 Here is how much of TeX's memory you used:
- 33035 strings out of 473197
- 617302 string characters out of 5718605
- 1050361 words of memory out of 5000000
- 55485 multiletter control sequences out of 15000+600000
- 819721 words of font info for 215 fonts, out of 8000000 for 9000
+ 33208 strings out of 473197
+ 620504 string characters out of 5718605
+ 1053316 words of memory out of 5000000
+ 55577 multiletter control sequences out of 15000+600000
+ 823982 words of font info for 245 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 132i,14n,135p,1129b,883s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 132i,14n,135p,1140b,883s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fira/FiraSans-Book.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fira/FiraSans-BookItalic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb>
-Output written on main.pdf (7 pages, 548972 bytes).
+Output written on main.pdf (12 pages, 821446 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 74313 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 299 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 74888 words of extra memory for PDF output out of 89155 (max. 10000000)
 

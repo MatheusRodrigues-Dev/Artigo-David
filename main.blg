@@ -3,44 +3,48 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: apalike-sol.bst
 Database file #1: refs.bib
-You've used 1 entry,
+Warning--empty chapter and pages in Dix2004
+Warning--empty publisher in Dix2004
+Warning--empty doi in Dix2004
+You've used 12 entries,
             1961 wiz_defined-function locations,
-            486 strings with 4001 characters,
-and the built_in function-call counts, 381 in all, are:
-= -- 34
-> -- 13
-< -- 1
-+ -- 6
-- -- 4
-* -- 33
-:= -- 71
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 7
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 14
-empty$ -- 28
-format.name$ -- 7
-if$ -- 71
+            569 strings with 6374 characters,
+and the built_in function-call counts, 4583 in all, are:
+= -- 428
+> -- 187
+< -- 7
++ -- 68
+- -- 62
+* -- 379
+:= -- 802
+add.period$ -- 35
+call.type$ -- 12
+change.case$ -- 87
+chr.to.int$ -- 12
+cite$ -- 15
+duplicate$ -- 187
+empty$ -- 327
+format.name$ -- 78
+if$ -- 900
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 3
-pop$ -- 4
+missing$ -- 16
+newline$ -- 61
+num.names$ -- 36
+pop$ -- 92
 preamble$ -- 1
-purify$ -- 7
+purify$ -- 91
 quote$ -- 0
-skip$ -- 12
+skip$ -- 145
 stack$ -- 0
-substring$ -- 23
-swap$ -- 1
-text.length$ -- 0
+substring$ -- 270
+swap$ -- 30
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
-warning$ -- 0
-while$ -- 3
+type$ -- 62
+warning$ -- 3
+while$ -- 29
 width$ -- 0
-write$ -- 16
+write$ -- 159
+(There were 3 warnings)
