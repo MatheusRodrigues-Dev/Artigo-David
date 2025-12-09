@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1765305785.46814 "main.aux" "main.bbl" "main" 1765305787.14018 0
+["bibtex main"] 1765309338.60932 "main.aux" "main.bbl" "main" 1765309340.41227 0
   "./apalike-sol.bst" 1764958108.05851 24928 269dedab788b7f84af88c155ecb45872 ""
   "./refs.bib" 1765305711.07818 8761 04bb359d826136593d5a54e68e35160a ""
-  "main.aux" 1765305786.80216 5551 8a88636b5265a471f74f07173a2e5071 "pdflatex"
+  "main.aux" 1765309340.06026 5551 d42908e6b52e6d5f14cd33d1c7126f22 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1765305785.63155 "/home/ssdnotedev/Artigo-David/main.tex" "main.pdf" "main" 1765305787.1404 0
+["pdflatex"] 1765309338.74113 "/home/ssdnotedev/Artigo-David/main.tex" "main.pdf" "main" 1765309340.41248 0
   "/etc/texmf/web2c/texmf.cnf" 1757903047.78521 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/ssdnotedev/Artigo-David/main.tex" 1765305783.22616 73223 aefb8016d95875e7c800c2998d49b2a6 ""
+  "/home/ssdnotedev/Artigo-David/main.tex" 1765309194.62828 73223 aefb8016d95875e7c800c2998d49b2a6 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fira/fir_2mfh3o.enc" 1570828436 3443 c184b8b1bd90c3ec5d4289b992e64d96 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fira/fir_iln36p.enc" 1570828436 3071 cfa92ee28d698dd9275559d9d1c3a233 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
@@ -246,17 +246,17 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1757903113 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757903195 3348813 0d5a809f044fc0c7eb76b87e7985fe12 ""
   "aas_macros.sty" 1764958108.0558 4967 cf45ff75f433e372cec5993ac08f4363 ""
-  "figures/metodologia/etapas.png" 1765226697.70589 58395 148dcfe0e896f0ce7c1ba1856b2767f3 ""
+  "figures/metodologia/etapas.png" 1765309328.16336 57058 9bfcd27eca5d91261212d8235af82aa0 ""
   "figures/resultado/Imagem1.png" 1764965303.47202 66504 cf642ec4b99c511825391766981e505e ""
   "figures/resultado/Imagem2.png" 1764965318.02395 76508 0ab2b9d7c5a9b97c9433a9dc539ce217 ""
   "figures/resultado/Imagem3.png" 1764965346.86903 101717 08e1cb88ea7dfe539ab752c2b4953f6d ""
   "figures/resultado/Imagem4.png" 1765289549.0714 120386 d10df69d4548a6622d969bb73e89f2ea ""
   "figures/resultado/Imagem5.png" 1765290342.40847 61548 5d00f9fd186eaa6ab5e3e5f2f431fd7e ""
   "figures/resultado/Imagem6.png" 1765299274.63694 67623 8d4afd0abbac9adb9101cf0e3d283eef ""
-  "main.aux" 1765305786.80216 5551 8a88636b5265a471f74f07173a2e5071 "pdflatex"
-  "main.bbl" 1765305785.61816 3085 49c37047a204d3f84f4d9fd8ee88fc9d "bibtex main"
-  "main.out" 1765305786.80216 1710 06dee79b61ea2ff9cf0749ee47680254 "pdflatex"
-  "main.tex" 1765305783.22616 73223 aefb8016d95875e7c800c2998d49b2a6 ""
+  "main.aux" 1765309340.06026 5551 d42908e6b52e6d5f14cd33d1c7126f22 "pdflatex"
+  "main.bbl" 1765309338.73226 3085 49c37047a204d3f84f4d9fd8ee88fc9d "bibtex main"
+  "main.out" 1765309340.06426 1710 06dee79b61ea2ff9cf0749ee47680254 "pdflatex"
+  "main.tex" 1765309194.62828 73223 aefb8016d95875e7c800c2998d49b2a6 ""
   "sbc2025.cls" 1764958108.06898 14768 bc0838d6832a9adab29f3989767c532d ""
   (generated)
   "main.aux"
