@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1765227683.22937 "main.aux" "main.bbl" "main" 1765227685.04932 0
+["bibtex main"] 1765286217.15081 "main.aux" "main.bbl" "main" 1765287721.72428 0
   "./apalike-sol.bst" 1764958108.05851 24928 269dedab788b7f84af88c155ecb45872 ""
   "./refs.bib" 1764958690.2313 2339 deba2025ee0fc8e8dd18ec9d5676639c ""
-  "main.aux" 1765227684.73245 2623 58e37d5f3715cc8f0c5357925a60a7a1 "pdflatex"
+  "main.aux" 1765287720.9494 2623 735cb568cbd3696dd032794b385fddee "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1765227683.61527 "/home/ssdnotedev/Artigo-David/main.tex" "main.pdf" "main" 1765227685.04949 0
+["pdflatex"] 1765287713.63682 "/home/ssdnotedev/Artigo-David/main.tex" "main.pdf" "main" 1765287721.72454 0
   "/etc/texmf/web2c/texmf.cnf" 1757903047.78521 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/ssdnotedev/Artigo-David/main.tex" 1765227680.38845 44796 5684fcca68a3e3504585b6d53c0e09eb ""
+  "/home/ssdnotedev/Artigo-David/main.tex" 1765287713.1494 44452 c86624c6107d1139b56045e3d751d842 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fira/fir_2mfh3o.enc" 1570828436 3443 c184b8b1bd90c3ec5d4289b992e64d96 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fira/fir_iln36p.enc" 1570828436 3071 cfa92ee28d698dd9275559d9d1c3a233 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
@@ -246,10 +246,10 @@
   "figures/resultado/Imagem1.png" 1764965303.47202 66504 cf642ec4b99c511825391766981e505e ""
   "figures/resultado/Imagem2.png" 1764965318.02395 76508 0ab2b9d7c5a9b97c9433a9dc539ce217 ""
   "figures/resultado/Imagem3.png" 1764965346.86903 101717 08e1cb88ea7dfe539ab752c2b4953f6d ""
-  "main.aux" 1765227684.73245 2623 58e37d5f3715cc8f0c5357925a60a7a1 "pdflatex"
-  "main.bbl" 1765227683.60045 374 b81ce52fb1f64992ad5f7bc998ca29b5 "bibtex main"
-  "main.out" 1765227684.73245 895 b4d3175f8be78d38cca14bb02de59044 "pdflatex"
-  "main.tex" 1765227680.38845 44796 5684fcca68a3e3504585b6d53c0e09eb ""
+  "main.aux" 1765287720.9494 2623 735cb568cbd3696dd032794b385fddee "pdflatex"
+  "main.bbl" 1765286217.33372 374 b81ce52fb1f64992ad5f7bc998ca29b5 "bibtex main"
+  "main.out" 1765287720.9654 895 b4d3175f8be78d38cca14bb02de59044 "pdflatex"
+  "main.tex" 1765287713.1494 44452 c86624c6107d1139b56045e3d751d842 ""
   "sbc2025.cls" 1764958108.06898 14768 bc0838d6832a9adab29f3989767c532d ""
   (generated)
   "main.aux"
