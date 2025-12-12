@@ -110,50 +110,59 @@ Diante desse cenário, esta pesquisa busca avaliar a usabilidade de três aplica
 Aplicativos de automação precisam oferecer experiências positivas, claras e intuitivas para alcançar seu propósito. Experiências negativas geram resistência, diminuem o engajamento e prejudicam a disseminação tecnológica, um desafio crítico para a consolidação de cidades inteligentes. Avaliar interfaces em contexto real, como neste estudo de caso, permite examinar a qualidade do design, sua adequação ao público-alvo e o papel do fator humano no desenvolvimento.
 
 Em síntese, esta pesquisa demonstra que interfaces bem projetadas, intuitivas e alinhadas às necessidades dos usuários têm maior probabilidade de serem aceitas e adotadas. Ao evidenciar como o design impacta a experiência do usuário e a adoção de tecnologias IoT, este estudo contribui para o avanço de soluções urbanas mais eficientes, acessíveis e coerentes com os princípios das cidades inteligentes.
+\section{Metodologia}
 
-\section{metodológica}
-A pesquisa foi conduzida por meio de um estudo de caso aplicado a três aplicativos, desenvolvidos pela Smart Sensor Design (SSD), startup especializada em soluções tecnológicas voltadas ao saneamento, automação e Internet das Coisas (IoT). O presente estudo busca compreender como usuários e especialistas interagem com as interfaces dos aplicativos avaliados, identificando dificuldades, padrões de uso e oportunidades de melhoria.
+Este estudo adotou o método de \textit{avaliação heurística} proposto por \cite{Nielsen1994}, técnica amplamente utilizada na área de Interação Humano-Computador (IHC) para identificar problemas de usabilidade por meio da inspeção sistemática da interface. A avaliação heurística consiste em confrontar as funcionalidades e elementos visuais de um sistema com um conjunto de dez princípios gerais de usabilidade, permitindo identificar violações, apontar inconsistências e priorizar melhorias. Trata-se de um método apropriado para produtos em desenvolvimento, especialmente em contextos de prototipação iterativa e sistemas IoT, cuja maturidade pode variar significativamente entre versões preliminares e builds funcionais \cite{Dix2004, Shneiderman2016}.
 
-Para a avaliação heurística dessa pesquisa, serão utilizados os seguintes aplicativos em desenvolvimento pela equipe da Smart Sensor Design:
+A pesquisa foi conduzida como um estudo de caso envolvendo três aplicativos móveis em desenvolvimento pela startup Smart Sensor Design (SSD), especializada em soluções baseadas em sensores e Internet das Coisas (IoT). Os aplicativos avaliados foram selecionados por contemplarem diferentes domínios de uso, energia elétrica, pesca e monitoramento hídrico, permitindo analisar como os princípios heurísticos se manifestam em contextos operacionais distintos.
+
+\subsection{Descrição dos Aplicativos Avaliados}
+
+\textbf{Smart Energy Meter:} aplicativo para monitoramento de consumo energético em tempo real, utilizando sensores indutivos conectados a um microcontrolador ESP32. O sistema apresenta registros de consumo, gráficos e indicadores que auxiliam o usuário na tomada de decisões relacionadas à eficiência energética.
+
+\textbf{Smart Fish Finder:} aplicativo voltado ao monitoramento de atividade pesqueira por meio de sensores subaquáticos. Apresenta informações sobre localização de cardumes, profundidade e temperatura da água, oferecendo suporte à decisão para pescadores amadores e profissionais.
+
+\textbf{Smart Flow Hall:} aplicativo destinado ao monitoramento de fluxo hídrico, empregando sensores baseados no efeito Hall. O sistema fornece dados de vazão, consumo acumulado e histórico de uso, visando apoiar o gerenciamento eficiente de recursos hídricos.
+
+Esses aplicativos encontravam-se em diferentes níveis de maturidade: protótipos navegáveis em Figma, versões beta distribuídas via TestFlight e builds experimentais disponíveis em lojas restritas (\textit{Google Play} e \textit{Apple App Store}). Essa diversidade permitiu aplicar o método heurístico tanto em interfaces estáticas quanto em funcionalidades já implementadas, ampliando a abrangência da análise.
+
+\subsection{Procedimento de Avaliação}
+
+A avaliação heurística foi estruturada em quatro rodadas complementares, apresentadas na Figura~\ref{MetodoloEtapas}, cada uma com objetivos específicos e níveis distintos de fidelidade da interface:
+
+\begin{figure}[!ht] \begin{center} \includegraphics[width=\columnwidth]{figures/metodologia/etapas.png} \caption{Etapas metodológicas da avaliação heurística} \label{MetodoloEtapas} \end{center} \end{figure}
+
+\begin{enumerate}
+    \item \textbf{Rodada 1 — Análise Inicial de Protótipos:} conduzida pelo pesquisador utilizando protótipos navegáveis em Figma e versões preliminares distribuídas via TestFlight. Essa etapa documentou o estado inicial das interfaces, identificando problemas estruturais de navegação, hierarquia da informação e compreensão dos dados.
+    
+    \item \textbf{Rodada 2 — Avaliação em Ambientes Próximos ao Uso Real:} o pesquisador analisou versões experimentais disponibilizadas em lojas restritas (\textit{Google Play} e \textit{Apple App Store}). Nessa rodada, foram observados comportamentos dinâmicos, tempos de resposta, funcionamento de gráficos e mensagens de sistema.
+    
+    \item \textbf{Rodada 3 — Revisão das Melhorias Implementadas:} consistiu na reaplicação do checklist após a implementação das correções sugeridas nas fases anteriores. O objetivo foi verificar a resolução das violações, identificar regressões e observar novos problemas decorrentes da evolução das funcionalidades.
+    
+    \item \textbf{Rodada 4 — Avaliação Independente por Especialistas:} realizada por dois especialistas externos com experiência em usabilidade e sistemas IoT. Os avaliadores aplicaram o mesmo checklist semiestruturado de forma independente, fornecendo validação técnica das etapas anteriores e contribuindo com observações adicionais não identificadas pelo pesquisador.
+\end{enumerate}
+
+Essa abordagem iterativa permitiu comparar versões, caracterizar problemas recorrentes e identificar padrões de usabilidade compartilhados entre os três aplicativos.
+
+\subsection{Instrumentos e Registro dos Dados}
+
+O instrumento principal utilizado foi um \textit{checklist} semiestruturado elaborado com base nos dez princípios heurísticos de \cite{Nielsen1994}. Cada heurística foi operacionalizada em um conjunto de critérios observáveis, permitindo maior padronização na coleta dos dados. Para cada problema identificado, o avaliador registrou:
 
 \begin{itemize}
-	\item \textbf{Smart Energy Meter:} Este aplicativo tem como objetivo criar uma interface de sensores de controle de consumo de energia de eletrodomésticos e aparelhos eletroeletrônicos. Ele pretende permitir que o usuário monitore e gerencie o consumo de energia em tempo real, ajude na tomada de decisões, perceba consumo excessivo e identifique a necessidade de ajustes para otimizar o consumo energético. Utilizando sensores indutivos de última geração conectados a um microcontrolador ESP32, os dados coletados são enviados para um servidor, permitindo monitoramento conveniente e detalhado;
-	\item \textbf{Smart Fish Finder:} Este aplicativo é voltado para a interação com sensores de pesca. O Smart Fish Finder pretende monitorar a atividade de pesca em tempo real, incluindo a localização de cardumes, profundidade da água e temperatura, proporcionando uma experiência de pesca otimizada através de uma interface de fácil uso. Ele ajuda os pescadores a tomarem decisões informadas sobre onde e quando pescar, aumentando a eficiência e o sucesso da pesca;
-	\item \textbf{Smart Flow Hall:} Este aplicativo visa controlar sensores de fluxo de água utilizando o princípio do efeito Hall. Ele tem como objetivo proporcionar precisão excepcional e longevidade no monitoramento do consumo de água, ajudando na tomada de decisões e na otimização do uso dos recursos hídricos. A tecnologia minimiza componentes mecânicos, resultando em menor necessidade de manutenção e maior confiabilidade.
+    \item a heurística violada;
+    \item a descrição da ocorrência;
+    \item a tela ou fluxo afetado;
+    \item a evidência observada;
+    \item o nível de gravidade (escala 0–4, conforme Nielsen).
 \end{itemize}
 
-Para isso, foi realizada a avaliação heurística, método amplamente utilizado na análise de usabilidade por meio dos dez princípios de Jakob Nielsen. A avaliação utilizou um checklist semiestruturado, elaborado com base nos dez princípios heurísticos de \cite{Nielsen1994}.
+Os registros das quatro rodadas foram tabulados em planilhas estruturadas e posteriormente analisados de forma comparativa. Essa análise permitiu calcular frequências, agrupar problemas por heurísticas e sintetizar a evolução dos aplicativos ao longo do processo iterativo.
 
-O processo de avaliação foi conduzido em quatro rodadas complementares, cada uma com objetivos e níveis de maturidade distintos, conforme ilustrado na Figura \ref{MetodoloEtapas}. 
+\subsection{Aspectos Éticos}
 
-\begin{figure}[!ht]
-    \begin{center}
-        \includegraphics[width=\columnwidth]{figures/metodologia/etapas.png}
-        \caption{Etapas metodológicas da avaliação heurística}
-        \label{MetodoloEtapas}
-    \end{center}
-\end{figure}
+A participação dos especialistas externos foi submetida e aprovada pelo Comitê Permanente de Ética em Pesquisa com Seres Humanos (COPEP/UEM), seguindo as diretrizes da Resolução CNS nº 466/2012. O projeto foi aprovado sob o número CAAE 73814323.6.0000.0104, Parecer 6.336.076.
 
-A primeira rodada, realizada pelo pesquisador, envolveu a análise inicial de protótipos desenvolvidos em Figma e versões beta distribuídas via TestFlight, permitindo identificar problemas estruturais de navegação, layout e organização das informações. Na segunda rodada, o pesquisador avaliou versões experimentais disponibilizadas por links restritos nas lojas Google Play Store e Apple App Store, o que possibilitou testar os aplicativos em condições mais próximas do uso real e observar questões funcionais emergentes. A terceira rodada consistiu em uma revisão sistemática das melhorias implementadas, utilizando novamente os protótipos e as versões instaladas nos dispositivos, com o objetivo de verificar a correção dos problemas previamente identificados. 
-
-Por fim, a quarta rodada foi conduzida por dois especialistas externos, que aplicaram um checklist semiestruturado baseado nas heurísticas de Nielsen, validando os achados das fases anteriores e oferecendo uma análise técnica independente das versões mais recentes dos aplicativos.
-
-Essa estrutura metodológica possibilitou combinar a familiaridade técnica do pesquisador com a visão crítica externa dos especialistas, oferecendo uma análise robusta sobre a usabilidade dos aplicativos desenvolvidos.
-
-Os registros foram posteriormente analisados de forma sistemática, possibilitando comparar apps, agrupar problemas por categorias heurísticas e estabelecer recomendações específicas para cada interface.
-
-Por envolver a participação de especialistas externos, esta etapa foi submetida à avaliação do Comitê Permanente de Ética em Pesquisa com Seres Humanos (COPEP) da Universidade Estadual de Maringá. O estudo foi aprovado sob o número CAAE 73814323.6.0000.0104, Parecer 6.336.076, conforme as diretrizes da Resolução CNS/MS nº 466/2012.
-
-A inclusão desses três aplicativos em desenvolvimento (Smart Energy Meter, Smart Fish Finder e Smart Flow Hall) visa avaliar a eficiência de suas interfaces e sua adesão pelos usuários, contribuindo para o aprimoramento das soluções tecnológicas oferecidas pela Smart Sensor Design. 
-
-\subsection{Instrumentos Utilizados}
-
-Cada avaliador analisou as interfaces com base nesses critérios, registrando problemas encontrados e atribuindo níveis de gravidade de acordo com o impacto, frequência e persistência das falhas.
-
-Da avaliação heurística, foram analisados os resultados dos checklists preenchidos pelo próprio pesquisador. Primeiramente, o pesquisador tabulou as respostas dos pontos de resposta objetiva para análise quantitativa do que foi verificado nas respostas em 10 categorias de dados.
-
-Foi organizada uma tabela para exposição dos resultados dos três aplicativos em desenvolvimento pela Smart Sensor Design: Smart Energy Meter, Smart Fish Finder e Smart Flow Hall. Na tabela \ref{tabela-comparacao}, estão apresentados os pontos considerados na organização dos resultados com base em \cite{Nielsen1994}.
-
+Essa estrutura metodológica possibilitou uma avaliação robusta e sistemática das interfaces em desenvolvimento, combinando a familiaridade interna do pesquisador com a análise crítica de avaliadores externos experientes.
 
 \begin{table*}[!ht]
     \caption{Categorias e critérios avaliados nos aplicativos analisados.}

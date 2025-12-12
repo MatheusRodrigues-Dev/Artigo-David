@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.9.14)  10 DEC 2025 10:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.9.14)  11 DEC 2025 11:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -976,37 +976,32 @@ Package fancyhdr Warning: \headheight is too small (36.90002pt):
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 120.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/sl/n' in size <12> not available
+(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 119.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/book/n' will be
+(Font)              scaled to size 12.0pt on input line 119.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <12> not available
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 119.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 119.
+
+
+<figures/metodologia/etapas.png, id=123, 864.98157pt x 521.69907pt>
+File: figures/metodologia/etapas.png Graphic file (type png)
+<use figures/metodologia/etapas.png>
+Package pdftex.def Info: figures/metodologia/etapas.png  used on input line 133.
+(pdftex.def)             Requested size: 240.0pt x 144.7533pt.
+
+
+[2 <./figures/metodologia/etapas.png (PNG copy)>]
+LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 152.
  (/usr/share/texmf/tex/latex/tex-gyre/ts1qtm.fd
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 )
 
-<figures/metodologia/etapas.png, id=107, 864.98157pt x 521.69907pt>
-File: figures/metodologia/etapas.png Graphic file (type png)
-<use figures/metodologia/etapas.png>
-Package pdftex.def Info: figures/metodologia/etapas.png  used on input line 131.
-(pdftex.def)             Requested size: 240.0pt x 144.7533pt.
 
 
-[2{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./figures/metodologia/etapas.png (PNG copy)>]
-LaTeX Font Info:    Font shape `T1/FiraSans-OsF/sl/n' in size <12> not available
-(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 149.
-LaTeX Font Info:    Font shape `T1/FiraSans-OsF/book/n' will be
-(Font)              scaled to size 12.0pt on input line 149.
-LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <12> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 149.
-LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 149.
-
-Underfull \hbox (badness 1242) in paragraph at lines 151--152
-\T1/qtm/m/n/10 (+20) Cada avali-ador anal-isou as in-ter-faces com base nesses
- []
-
-
-
-
-
-[3]
+[3{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
 Underfull \vbox (badness 5475) has occurred while \output is active []
 
 
@@ -1014,38 +1009,36 @@ Underfull \vbox (badness 5475) has occurred while \output is active []
 
 
 [4]
-<figures/resultado/Imagem1.png, id=142, 342.27875pt x 246.9225pt>
+<figures/resultado/Imagem1.png, id=164, 342.27875pt x 246.9225pt>
 File: figures/resultado/Imagem1.png Graphic file (type png)
 <use figures/resultado/Imagem1.png>
-Package pdftex.def Info: figures/resultado/Imagem1.png  used on input line 263.
+Package pdftex.def Info: figures/resultado/Imagem1.png  used on input line 272.
 (pdftex.def)             Requested size: 240.0pt x 173.1422pt.
 
 
-<figures/resultado/Imagem2.png, id=149, 415.5525pt x 299.1175pt>
+<figures/resultado/Imagem2.png, id=171, 415.5525pt x 299.1175pt>
 File: figures/resultado/Imagem2.png Graphic file (type png)
 <use figures/resultado/Imagem2.png>
-Package pdftex.def Info: figures/resultado/Imagem2.png  used on input line 275.
+Package pdftex.def Info: figures/resultado/Imagem2.png  used on input line 284.
 (pdftex.def)             Requested size: 240.0pt x 172.75343pt.
-<figures/resultado/Imagem3.png, id=154, 415.5525pt x 312.16624pt>
-File: figures/resultado/Imagem3.png Graphic file (type png)
-<use figures/resultado/Imagem3.png>
-Package pdftex.def Info: figures/resultado/Imagem3.png  used on input line 289.
-(pdftex.def)             Requested size: 240.0pt x 180.28966pt.
 
 
 [5 <./figures/resultado/Imagem1.png> <./figures/resultado/Imagem2.png>]
-Underfull \vbox (badness 1817) has occurred while \output is active []
-
+<figures/resultado/Imagem3.png, id=184, 415.5525pt x 312.16624pt>
+File: figures/resultado/Imagem3.png Graphic file (type png)
+<use figures/resultado/Imagem3.png>
+Package pdftex.def Info: figures/resultado/Imagem3.png  used on input line 298.
+(pdftex.def)             Requested size: 240.0pt x 180.28966pt.
 
 
 
 
 [6 <./figures/resultado/Imagem3.png>]
 
-<figures/resultado/Imagem4.png, id=181, 415.5525pt x 312.16624pt>
+<figures/resultado/Imagem4.png, id=201, 415.5525pt x 312.16624pt>
 File: figures/resultado/Imagem4.png Graphic file (type png)
 <use figures/resultado/Imagem4.png>
-Package pdftex.def Info: figures/resultado/Imagem4.png  used on input line 335.
+Package pdftex.def Info: figures/resultado/Imagem4.png  used on input line 344.
 (pdftex.def)             Requested size: 240.0pt x 180.28966pt.
 
 
@@ -1054,27 +1047,27 @@ Underfull \vbox (badness 1817) has occurred while \output is active []
 
 
 
-<figures/resultado/Imagem5.png, id=192, 415.5525pt x 312.16624pt>
+<figures/resultado/Imagem5.png, id=212, 415.5525pt x 312.16624pt>
 File: figures/resultado/Imagem5.png Graphic file (type png)
 <use figures/resultado/Imagem5.png>
-Package pdftex.def Info: figures/resultado/Imagem5.png  used on input line 363.
+Package pdftex.def Info: figures/resultado/Imagem5.png  used on input line 372.
 (pdftex.def)             Requested size: 240.0pt x 180.28966pt.
 
-Underfull \vbox (badness 3396) has occurred while \output is active []
+
+[8 <./figures/resultado/Imagem4.png>]
 
 
 
-[8 <./figures/resultado/Imagem4.png> <./figures/resultado/Imagem5.png>]
-
-
-
-[9]
-<figures/resultado/Imagem6.png, id=207, 415.5525pt x 312.16624pt>
+[9 <./figures/resultado/Imagem5.png>]
+<figures/resultado/Imagem6.png, id=227, 415.5525pt x 312.16624pt>
 File: figures/resultado/Imagem6.png Graphic file (type png)
 <use figures/resultado/Imagem6.png>
-Package pdftex.def Info: figures/resultado/Imagem6.png  used on input line 403.
+Package pdftex.def Info: figures/resultado/Imagem6.png  used on input line 412.
 (pdftex.def)             Requested size: 240.0pt x 180.28966pt.
 
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -1092,9 +1085,9 @@ Underfull \hbox (badness 1142) in paragraph at lines 47--50
 []\T1/qtm/m/n/10 (+20) Shneiderman, B., Plaisant, C., Co-hen, M., Ja-cobs, S.,
  []
 
+
+
 )
-
-
 
 [12] (./main.aux)
  ***********
@@ -1109,21 +1102,21 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 06DEE79B61EA2FF9CF0749EE47680254;1710.
+(rerunfilecheck)             Checksum: F319C5D1E434085FA88F06744FC5669F;2343.
  ) 
 Here is how much of TeX's memory you used:
- 33201 strings out of 473197
- 620364 string characters out of 5718605
+ 33223 strings out of 473197
+ 620596 string characters out of 5718605
  1051269 words of memory out of 5000000
- 55574 multiletter control sequences out of 15000+600000
- 823830 words of font info for 244 fonts, out of 8000000 for 9000
+ 55577 multiletter control sequences out of 15000+600000
+ 824526 words of font info for 250 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  132i,14n,135p,1675b,883s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fira/FiraSans-Book.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fira/FiraSans-BookItalic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb>
-Output written on main.pdf (12 pages, 819250 bytes).
+Output written on main.pdf (12 pages, 819815 bytes).
 PDF statistics:
- 295 PDF objects out of 1000 (max. 8388607)
- 246 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 74888 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 316 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 74912 words of extra memory for PDF output out of 89155 (max. 10000000)
 

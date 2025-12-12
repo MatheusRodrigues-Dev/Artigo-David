@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1765316783.44976 "main.aux" "main.bbl" "main" 1765373679.89934 0
+["bibtex main"] 1765463917.56309 "main.aux" "main.bbl" "main" 1765464784.45665 0
   "./apalike-sol.bst" 1764958108.05851 24928 269dedab788b7f84af88c155ecb45872 ""
-  "./refs.bib" 1765305711.07818 8761 04bb359d826136593d5a54e68e35160a ""
-  "main.aux" 1765373679.21816 5443 a3b76135e686100b0c159f1744449c6d "pdflatex"
+  "./refs.bib" 1765463913.6399 8761 04bb359d826136593d5a54e68e35160a ""
+  "main.aux" 1765464783.88383 5887 0ebd38fa0a2904ef11aa09b11eb13c63 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1765373676.39619 "/home/ssdnotedev/Artigo-David/main.tex" "main.pdf" "main" 1765373679.89977 0
+["pdflatex"] 1765464781.08218 "/home/ssdnotedev/Artigo-David/main.tex" "main.pdf" "main" 1765464784.45694 0
   "/etc/texmf/web2c/texmf.cnf" 1757903047.78521 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/ssdnotedev/Artigo-David/main.tex" 1765373672.74617 73017 c33caf415f062caf3698547a17791977 ""
+  "/home/ssdnotedev/Artigo-David/main.tex" 1765464780.57984 73314 284d55c94ad43dfebe2107a8ba16875f ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fira/fir_2mfh3o.enc" 1570828436 3443 c184b8b1bd90c3ec5d4289b992e64d96 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fira/fir_iln36p.enc" 1570828436 3071 cfa92ee28d698dd9275559d9d1c3a233 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
@@ -253,10 +253,10 @@
   "figures/resultado/Imagem4.png" 1765289549.0714 120386 d10df69d4548a6622d969bb73e89f2ea ""
   "figures/resultado/Imagem5.png" 1765290342.40847 61548 5d00f9fd186eaa6ab5e3e5f2f431fd7e ""
   "figures/resultado/Imagem6.png" 1765299274.63694 67623 8d4afd0abbac9adb9101cf0e3d283eef ""
-  "main.aux" 1765373679.21816 5443 a3b76135e686100b0c159f1744449c6d "pdflatex"
-  "main.bbl" 1765316783.58713 2760 5670c19782d321a617995cce0389449e "bibtex main"
-  "main.out" 1765373679.22216 1710 06dee79b61ea2ff9cf0749ee47680254 "pdflatex"
-  "main.tex" 1765373672.74617 73017 c33caf415f062caf3698547a17791977 ""
+  "main.aux" 1765464783.88383 5887 0ebd38fa0a2904ef11aa09b11eb13c63 "pdflatex"
+  "main.bbl" 1765463917.7199 2760 5670c19782d321a617995cce0389449e "bibtex main"
+  "main.out" 1765464783.88783 2343 f319c5d1e434085fa88f06744fc5669f "pdflatex"
+  "main.tex" 1765464780.57984 73314 284d55c94ad43dfebe2107a8ba16875f ""
   "sbc2025.cls" 1764958108.06898 14768 bc0838d6832a9adab29f3989767c532d ""
   (generated)
   "main.aux"
